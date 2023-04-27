@@ -92,7 +92,21 @@ h2{
 
 #lol:hover{
     border-color: white;
-    border-style: solid 1px;
+    border-style: solid;
+    font-weight: 700;
+    color: white;
+}
+
+#lol-after{
+    width: 81px;
+    height: 29px;
+    background-color: #2C2C2C;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    border-radius: 5%;
+    font-family: 'Inter';
+    font-weight: 700;
 }
 
 #tft{
@@ -103,6 +117,25 @@ h2{
     border-style: none;
     border-radius: 5%;
     font-family: 'Inter';
+}
+
+#tft:hover{
+    border-style: solid;
+    border-color: white;
+    font-weight: 700;
+    color: white;
+}
+
+#tft-after{
+    width: 81px;
+    height: 29px;
+    background-color: #2C2C2C;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    border-radius: 5%;
+    font-family: 'Inter';
+    font-weight: 700;
 }
 
 #val{
