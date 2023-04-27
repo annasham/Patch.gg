@@ -43,6 +43,16 @@ h2{
     height: 150px;
 }
 
+.VCT{
+    background-image: url('/Images/VCT_AMER_PRIMER_ASSETS_HEADER_IMAGE_2.png');
+    background-size: cover;
+    padding: 10%;
+    border-radius: 4%;
+    background-color: gray;
+    background-blend-mode: multiply;
+    height: 150px;
+}
+
 .patchNotes{
     background-image: url('/Images/LoL_13-8_Patch_notes_Banner.jpg');
     background-size: cover;
@@ -55,6 +65,16 @@ h2{
 
 .tftpatchNotes{
     background-image: url('/Images/Patch_notes_13-8_Banners.jpg');
+    background-size: cover;
+    padding: 10%;
+    border-radius: 4%;
+    background-color: gray;
+    background-blend-mode: multiply;
+    height: 150px;
+}
+
+.valpatchNotes{
+    background-image: url('/Images/VAL-BANNER.jpeg');
     background-size: cover;
     padding: 10%;
     border-radius: 4%;
@@ -146,6 +166,18 @@ h2{
     border-style: none;
     border-radius: 5%;
     font-family: 'Inter';
+}
+
+#val-after{
+    width: 81px;
+    height: 29px;
+    background-color: #2C2C2C;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    border-radius: 5%;
+    font-family: 'Inter';
+    font-weight: 700;
 }
 
 #live{

@@ -5,3 +5,7 @@ function visitPage(){
 function visitHome(){
     window.location='/Pages/index.html';
 }
+
+function visitVal(){
+    window.location='/Pages/val.html';
+}
