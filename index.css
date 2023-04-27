@@ -1,0 +1,81 @@
+body, html {
+    font-family: 'PP Neue Montreal';
+    background-color: #151515;
+    color: #FFFFFF;
+    justify-content: center;
+    margin: 20px;
+}
+
+.top-nav{
+    display: flex;
+    column-gap: 10px;
+    justify-content: left;
+}
+
+h2{
+    font-weight: 700;
+}
+
+
+/* cards */
+
+.description{
+    color: #C2C2C2;
+    font-size: 12pt;
+}
+
+.MSI{
+    background-image: url('Images/MSI.png');
+    background-size: cover;
+    padding: 10%;
+    border-radius: 4%;
+    background-color: gray;
+    background-blend-mode: multiply;
+}
+
+.content{
+    bottom: 0;
+}
+
+/* buttons */
+#lol{
+    width: 81px;
+    height: 29px;
+    background-color: #2C2C2C;
+    color: #8f8f8f;
+    border-style: none;
+    border-radius: 5%;
+}
+
+#lol:hover{
+    border-color: white;
+    border-style: solid 1px;
+}
+
+#tft{
+    width: 81px;
+    height: 29px;
+    background-color: #2C2C2C;
+    color: #8f8f8f;
+    border-style: none;
+    border-radius: 5%;
+}
+
+#val{
+    width: 81px;
+    height: 29px;
+    background-color: #2C2C2C;
+    color: #8f8f8f;
+    border-style: none;
+    border-radius: 5%;
+}
+
+#live{
+    width: 61px;
+    height: 22px;
+    background-color: #C91D1D;
+    border-radius: 5%;
+    border-style: none;
+    color: white;
+    font-weight: 700;
+}
