@@ -1,0 +1,22 @@
+body, html {
+    font-family: 'Inter';
+    background-color: #151515;
+    color: #FFFFFF;
+    justify-content: center;
+    margin: 16px;
+}
+
+.header{
+    text-align: center;
+    display: flex;
+    gap: 25%;
+}
+
+.header p{
+    font-weight: 500;
+}
+
+ion-icon{
+    padding-top: 12px;
+    font-size: 25px;
+}
