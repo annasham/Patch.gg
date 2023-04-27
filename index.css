@@ -1,6 +1,5 @@
 body, html {
     font-family: 'Inter';
-    font-style: sans-serif;
     background-color: #151515;
     color: #FFFFFF;
     justify-content: center;
@@ -28,32 +27,31 @@ h2{
 .MSI{
     background-image: url('Images/MSI.png');
     background-size: cover;
-    padding: 15%;
+    padding: 10%;
     border-radius: 4%;
     background-color: gray;
     background-blend-mode: multiply;
-}
-
-.content{
-    bottom: 0;
+    height: 150px;
 }
 
 .patchNotes{
     background-image: url('Images/LoL_13-8_Patch_notes_Banner.jpg');
     background-size: cover;
-    padding: 15%;
+    padding: 10%;
     border-radius: 4%;
     background-color: gray;
     background-blend-mode: multiply;
+    height: 150px;
 }
 
 .archive{
     background-image: url('Images/2021_Key_art.jpg');
     background-size: cover;
-    padding: 15%;
+    padding: 10%;
     border-radius: 4%;
     background-color: gray;
     background-blend-mode: multiply;
+    height: 150px;
 }
 
 /* buttons */
