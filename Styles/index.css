@@ -103,6 +103,7 @@ h2{
 #lol{
     width: 91px;
     height: 39px;
+    font-size: 16pt;
     background-color: #2C2C2C;
     color: #8f8f8f;
     border-style: none;
@@ -132,6 +133,7 @@ h2{
 #tft{
     width: 91px;
     height: 39px;
+    font-size: 16pt;
     background-color: #2C2C2C;
     color: #8f8f8f;
     border-style: none;
@@ -161,6 +163,7 @@ h2{
 #val{
     width: 91px;
     height: 39px;
+    font-size: 16pt;
     background-color: #2C2C2C;
     color: #8f8f8f;
     border-style: none;
