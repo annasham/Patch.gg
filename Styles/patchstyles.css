@@ -7,9 +7,15 @@ body, html {
 }
 
 .header{
+    background-color: #151515;
     text-align: center;
     display: flex;
-    gap: 25%;
+    gap: 20%;
+    position: fixed;
+    width: 390px;
+    height: 60px;
+    top: 0;
+    padding-top: 10px;
 }
 
 .header p{
@@ -19,4 +25,11 @@ body, html {
 ion-icon{
     padding-top: 12px;
     font-size: 25px;
+}
+
+.header-image{
+    background-image: url('/Images/2021_Key_art.jpg');
+    background-size: cover;
+    border-radius: 4%;
+    padding: 35%;
 }
