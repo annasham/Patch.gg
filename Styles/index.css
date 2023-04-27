@@ -34,7 +34,7 @@ h2{
 }
 
 .MSI{
-    background-image: url('Images/MSI.png');
+    background-image: url('/Images/MSI.png');
     background-size: cover;
     padding: 10%;
     border-radius: 4%;
@@ -44,7 +44,7 @@ h2{
 }
 
 .patchNotes{
-    background-image: url('Images/LoL_13-8_Patch_notes_Banner.jpg');
+    background-image: url('/Images/LoL_13-8_Patch_notes_Banner.jpg');
     background-size: cover;
     padding: 10%;
     border-radius: 4%;
@@ -54,7 +54,7 @@ h2{
 }
 
 .archive{
-    background-image: url('Images/2021_Key_art.jpg');
+    background-image: url('/Images/2021_Key_art.jpg');
     background-size: cover;
     padding: 10%;
     border-radius: 4%;
