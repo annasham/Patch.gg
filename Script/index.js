@@ -3,7 +3,7 @@ function visitPage(){
 }
 
 function visitHome(){
-    window.location='index.html';
+    window.location='/index.html';
 }
 
 function visitVal(){
