@@ -8,9 +8,9 @@ body, html {
 
 .header{
     background-color: #151515;
+    position: fixed;
     height: 141px;
     width: 390px;
-    position: fixed;
 }
 
 .top-nav{
