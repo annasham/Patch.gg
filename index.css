@@ -45,6 +45,7 @@ h2{
     color: #8f8f8f;
     border-style: none;
     border-radius: 5%;
+    font-family: 'Inter';
 }
 
 #lol:hover{
@@ -59,6 +60,7 @@ h2{
     color: #8f8f8f;
     border-style: none;
     border-radius: 5%;
+    font-family: 'Inter';
 }
 
 #val{
@@ -68,6 +70,7 @@ h2{
     color: #8f8f8f;
     border-style: none;
     border-radius: 5%;
+    font-family: 'Inter';
 }
 
 #live{
@@ -78,4 +81,5 @@ h2{
     border-style: none;
     color: white;
     font-weight: 700;
+    font-family: 'Inter';
 }
