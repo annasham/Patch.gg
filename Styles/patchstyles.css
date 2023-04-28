@@ -49,23 +49,32 @@ ion-icon{
    color: white;
 }
 
-.collapsible {
-    background-color: #777;
-    color: white;
-    padding: 18px;
+.collapse {
+    background-color: #404040;
     border: none;
-    outline: none;
+    border-radius: 4%;
+    color: #8f8f8f;
     font-size: 15px;
-  }
+    padding: 5px;
+}
   
-  .active, .collapsible:hover {
-    background-color: #555;
-  }
+.active,
+.collapse:hover {
+    background-color: #808080;
+}
   
-  .content {
-    padding: 0 18px;
+.text {
+    background-color: #2c2c2c;
+    padding: 8px;
+    border-radius: 4px;
+    color: #c2c2c2;
     display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
-    color: white;
+    font-size: 12px;
+    text-align: left;
+}
+
+  #title{
+    display: block;
+    gap: 20px;
+    padding-top: 10px;
   }

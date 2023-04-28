@@ -1,8 +1,7 @@
-var coll = document.getElementsByClassName("collapsible");
-var i;
+document.addEventListener("DOMContentLoaded", function() {
+  var btn = document.getElementsByClassName("collapse");
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
+  btn[0].addEventListener("click", function() {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
     if (content.style.display === "block") {
@@ -11,4 +10,5 @@ for (i = 0; i < coll.length; i++) {
       content.style.display = "block";
     }
   });
-}
+});
+
