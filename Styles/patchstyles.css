@@ -63,4 +63,5 @@ ion-icon{
     font-size: 12px;
     text-align: left;
     margin-top: 10px;
+    transition: max-height 0.2s ease-out;
 }
