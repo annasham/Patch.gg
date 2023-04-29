@@ -181,6 +181,14 @@ h2{
     font-family: 'Inter';
 }
 
+#val:hover{
+    border-style: solid;
+    border-color: white;
+    font-weight: 700;
+    color: white;
+}
+
+
 #val-after{
     width: 91px;
     height: 39px;
