@@ -65,3 +65,29 @@ ion-icon{
     margin-top: 10px;
     transition: max-height 0.2s ease-out;
 }
+
+/*champion block*/
+.block{
+    background-color: #2C2C2C;
+    padding: 10px;
+    border-radius: 4px;
+    justify-content: center;
+}
+
+.champInfo{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.champText{
+    flex-direction: column;
+    line-height: 0.5;
+}
+
+#champImage{
+    background-color: #808080;
+    width: 67px;
+    height: 67px;
+    border-radius: 4px;
+}
