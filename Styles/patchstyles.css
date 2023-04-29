@@ -82,7 +82,17 @@ ion-icon{
 
 .champText{
     flex-direction: column;
-    line-height: 0.5;
+    line-height: 1;
+}
+
+#champName{
+    font-size: 13px;
+    font-weight: 700;
+}
+
+#champDescription{
+    color: #C2C2C2;
+    font-size: 13px;
 }
 
 #champImage{
