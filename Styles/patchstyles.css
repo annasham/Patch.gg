@@ -114,6 +114,7 @@ ion-icon{
     min-width: 67px;
     min-height: 67px;
     border-radius: 4px;
+    width: 100%;
 }
 
 #champDrop{
