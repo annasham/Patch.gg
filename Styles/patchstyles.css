@@ -28,7 +28,7 @@ ion-icon{
 }
 
 .header-image{
-    background-image: url('/Images/2021_Key_art.jpg');
+    background-image: url('/Images/050223_LoL_Patch_13_9_Notes_Banner.jpg');
     background-size: cover;
     border-radius: 4%;
     padding: 35%;
@@ -49,9 +49,10 @@ ion-icon{
     color: white;
     border: none;
     font-size: 15px;
-    padding-left: 20px;
-    padding-top: 20px;
+    /* padding-left: 20px; */
+    padding: 20px;
     align-content: center;
+    justify-content: center;
 }
 
 #drop{
