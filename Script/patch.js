@@ -1,5 +1,8 @@
 // const { data } = require("cheerio/lib/api/attributes");
-
+//fetch data
+fetch('https://ddragon.leagueoflegends.com/cdn/13.9.1/data/en_US/champion/Neeko.json')
+  .then(response => response.json())
+  .then(data => console.log(data));
 
 //collapse for patch highlights
 document.addEventListener("DOMContentLoaded", function() {
@@ -28,9 +31,6 @@ document.addEventListener("DOMContentLoaded", function() {
 //   }
 // });
     
-
-
-
 //display champion image//
 const apiKey = "RGAPI-6697e72d-349c-4059-8289-21d461a7db46";
 const champName = document.getElementById("champName");
@@ -80,23 +80,4 @@ fetchChampionImage("Neeko");
 
 // //parse data
 // const parsedpatchData = cheerio.load(patchData);
-
-// //extract champion changes
-
-const axios = require("axios");
-const cheerio = require("cheerio");
-
-axios.get('https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-9-notes/')
-  .then(response => {
-    const $ = cheerio.load(response.data);
-    const patchNotesContent = $('#patch-notes .article__content').html();
-    console.log(patchNotesContent);
-  })
-  .catch(error => {
-    console.log(error);
-  });
-
-
-
-
 

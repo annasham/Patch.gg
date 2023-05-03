@@ -1,0 +1,30 @@
+[
+    {
+      "PatchVer": "13.9",
+      "ID": 82,
+      "Name": "Neeko",
+      "Summary": "Neeko Midscope Update",
+      "Details": "We're opening up Neeko's passive to be able to turn into anything so that Neeko can truly be a unique trickster. She will be able to turn into anything with a health bar, from a minion, to a monster, to an Illaoi tentacle. She will have quite a few unusual interactions with other champions based on what she's disguised as.",
+      "Abilities": [
+        {
+          "Name": "Passive - Inherent Glamour",
+          "Thumbnail": "https://am-a.akamaihd.net/image?f=https://ddragon.leagueoflegends.com/cdn/13.9.1/img/passive/Neeko_P.png",
+          "Attributes": [
+            {
+              "Name": "Neeko for Speedo!",
+              "Label": "Neeko no longer inherits base attack speed/move speed from disguised target if that stat is higher than hers.",
+              "Before": "25-10 seconds",
+              "After": "2 seconds"
+            },
+            {
+              "Name": "Monster Damage Ratio",
+              "Label": "",
+              "Before": "250%",
+              "After": "300%"
+            }
+          ]
+        }
+      ],
+      "MidPatch": false
+    }
+  ]
