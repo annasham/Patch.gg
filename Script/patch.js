@@ -1,5 +1,7 @@
 // const { data } = require("cheerio/lib/api/attributes");
 
+
+//collapse for patch highlights
 document.addEventListener("DOMContentLoaded", function() {
   var btn = document.getElementsByClassName("collapse");
 
@@ -13,6 +15,21 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 });
+
+//collapse for champion blocks
+// const champDropBtn = document.querySelector('.champDrop');
+// const changesDiv = document.querySelector('.changes');
+
+// champDropBtn.addEventListener('click', function() {
+//   if (changesDiv.style.display === 'none') {
+//       changesDiv.style.display = 'block';
+//   } else {
+//       changesDiv.style.display = 'none';
+//   }
+// });
+    
+
+
 
 //display champion image//
 const apiKey = "RGAPI-6697e72d-349c-4059-8289-21d461a7db46";
@@ -38,5 +55,48 @@ function fetchChampionImage(championName) {
 
 // Example usage:
 fetchChampionImage("Neeko");
+
+
+// //fetch data
+// const fetch = require("node-fetch");
+// const cheerio = require("cheerio");
+
+// //get Data
+// const getRiotData = (URL) => {
+//     return fetch(URL)
+//     .then((response) => response.text())
+//     .then((data) => {
+//         return data;
+//     });
+// };
+
+// //patch notes URL
+// const URL = "https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-9-notes/";
+
+// //run program
+// const getPatchData = async () => {
+//     const patchData = await getRiotData(URL);
+// }
+
+// //parse data
+// const parsedpatchData = cheerio.load(patchData);
+
+// //extract champion changes
+
+const axios = require("axios");
+const cheerio = require("cheerio");
+
+axios.get('https://www.leagueoflegends.com/en-us/news/game-updates/patch-13-9-notes/')
+  .then(response => {
+    const $ = cheerio.load(response.data);
+    const patchNotesContent = $('#patch-notes .article__content').html();
+    console.log(patchNotesContent);
+  })
+  .catch(error => {
+    console.log(error);
+  });
+
+
+
 
 
