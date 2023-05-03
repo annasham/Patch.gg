@@ -84,12 +84,12 @@ ion-icon{
     border-radius: 4px;
     justify-content: center;
     margin-bottom: 8px;
+    display: flex;
 }
 
 .champInfo{
     display: flex;
     gap: 10px;
-    margin-top: 10px;
 }
 
 .champText{
@@ -101,12 +101,13 @@ ion-icon{
 #champName{
     font-size: 13px;
     font-weight: 700;
+    margin: 13px;
 }
 
 #champDescription{
     color: #C2C2C2;
     font-size: 13px;
-    width: 150px;
+    margin: 13px;
 }
 
 .champImage{
@@ -114,11 +115,11 @@ ion-icon{
     min-width: 67px;
     min-height: 67px;
     border-radius: 4px;
-    width: 100%;
 }
 
 #champDrop{
     font-size: 20px;
-    padding-left: 60px;
+    /* padding-left: 60px; */
     padding-top: 20px;
+    justify-content: flex-end;
 }
