@@ -44,6 +44,15 @@ ion-icon{
     align-content: center;
 }
 
+.champDrop{
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 10px;
+    align-content: center;
+}
+
 #drop{
     font-size: 15px;
 }
