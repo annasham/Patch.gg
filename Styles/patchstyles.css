@@ -107,7 +107,7 @@ ion-icon{
 #champDescription{
     color: #C2C2C2;
     font-size: 13px;
-    margin: 13px;
+    margin: 13CSpx;
 }
 
 .champImage{
@@ -117,9 +117,8 @@ ion-icon{
     border-radius: 4px;
 }
 
-#champDrop{
+.champDrop{
     font-size: 20px;
-    /* padding-left: 60px; */
+    padding-left: 60px;
     padding-top: 20px;
-    justify-content: flex-end;
 }
