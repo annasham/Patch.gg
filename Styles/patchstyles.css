@@ -107,9 +107,7 @@ ion-icon{
 }
 
 #championImage{
-    background-color: #808080;
-    min-width: 67px;
-    min-height: 67px;
+    /* background-color: #808080; */
     border-radius: 4px;
 }
 

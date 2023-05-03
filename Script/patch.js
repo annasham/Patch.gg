@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //display champion image//
 const apiKey = "RGAPI-6697e72d-349c-4059-8289-21d461a7db46";
+const champName = document.getElementById("champName");
 
 function fetchChampionImage(championName) {
   fetch(`https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/${championName}.png?api_key=${apiKey}`)
@@ -27,7 +28,7 @@ function fetchChampionImage(championName) {
     })
     .then(blob => {
       const imageUrl = URL.createObjectURL(blob);
-      const imageTag = `<img src="${imageUrl}" alt="${championName}">`;
+      const imageTag = `<img src="${imageUrl}" alt="${championName}"style="width: 67px; height: 67px; border-radius: 4%;">`;
       document.getElementById("championImage").innerHTML = imageTag;
     })
     .catch(error => {
@@ -37,3 +38,5 @@ function fetchChampionImage(championName) {
 
 // Example usage:
 fetchChampionImage("Neeko");
+
+
