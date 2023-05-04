@@ -51,7 +51,7 @@ function fetchChampionImage(championName) {
     .catch(error => {
       console.error("Error fetching champion image:", error);
     });
-}
+};
 
 // Example usage:
 fetchChampionImage("Neeko");
