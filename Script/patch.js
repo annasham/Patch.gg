@@ -1,7 +1,5 @@
-//fetch data
-fetch('https://ddragon.leagueoflegends.com/cdn/13.9.1/data/en_US/champion/Neeko.json')
-  .then(response => response.json())
-  .then(data => console.log(data));
+//fetch JSON file for Patch 13.9.1 Notes Data
+fetch 
 
 //collapse for patch highlights
 document.addEventListener("DOMContentLoaded", function() {
