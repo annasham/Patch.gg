@@ -25,10 +25,18 @@ body, html {
 ion-icon{
     padding-top: 12px;
     font-size: 25px;
+    color: white;
 }
 
 .header-image{
     background-image: url('/Images/050223_LoL_Patch_13_9_Notes_Banner.jpg');
+    background-size: cover;
+    border-radius: 4%;
+    padding: 35%;
+}
+
+.header-banner{
+    background-image: url('https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltfc6a65b2d14d8684/644984d2de40d20defb3d362/050223_TFT_Patch_13_9_Notes_Banner.jpg');
     background-size: cover;
     border-radius: 4%;
     padding: 35%;
