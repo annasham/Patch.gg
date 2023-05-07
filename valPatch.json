@@ -1,0 +1,33 @@
+[
+    {
+      "PatchVer": "6.07",
+      "ID": 1,
+      "Name": "Sova",
+      "Summary": "",
+      "Abilities": [
+        {
+          "Name": "E - Recon Bolt",
+          "Attributes": [
+            {
+              "Name": "Bloom",
+              "Label": "",
+              "Before": "",
+              "After": "Correctly appear when playing with Bloom (graphical effect that makes things brighter) turned off."
+            },
+            {
+              "Name": "VFX",
+              "Label": "",
+              "Before": "",
+              "After": "Scanning VFX has been updated to be more visible as it travels through the world."
+            },
+            {
+              "Name": "Model",
+              "Label": "",
+              "Before": "",
+              "After": "Increased in size to more accurately represent its hitbox. This will not affect lineups. The collision as it travels is unchanged."
+            }
+          ]
+        }
+      ]
+    }
+  ]
