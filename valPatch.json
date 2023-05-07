@@ -1,12 +1,14 @@
 [
     {
-      "PatchVer": "6.07",
+      "PatchVer": "6.08",
       "ID": 1,
       "Name": "Sova",
-      "Summary": "",
+      "Summary": "Born from the eternal winter of Russia's tundra, Sova tracks, finds, and eliminates enemies with ruthless efficiency and precision. His custom bow and incredible scouting abilities ensure that even if you run, you cannot hide.",
+      "Image": "https://media.valorant-api.com/agents/ded3520f-4264-bfed-162d-b080e2abccf9/displayicon.png",
       "Abilities": [
         {
           "Name": "E - Recon Bolt",
+          "abilityImage":"https://media.valorant-api.com/agents/ded3520f-4264-bfed-162d-b080e2abccf9/abilities/ability2/displayicon.png",
           "Attributes": [
             {
               "Name": "Bloom",
@@ -29,5 +31,188 @@
           ]
         }
       ]
-    }
+    },
+    {
+        "PatchVer": "6.08",
+        "ID": 1,
+        "Name": "Reyna",
+        "Image": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/displayicon.png",
+        "Summary": "Forged in the heart of Mexico, Reyna dominates single combat, popping off with each kill she scores. Her capability is only limited by her raw skill, making her sharply dependant on performance.",
+        "Abilities": [
+          {
+            "Name": "C - Leer",
+            "abilityImage":"https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/abilities/grenade/displayicon.png",
+            "Attributes": [
+              {
+                "Name": "Indicator",
+                "Label": "Removed",
+                "Before": "",
+                "After": "Yellow indicator removed."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "PatchVer": "6.08",
+        "ID": 1,
+        "Name": "KAY/O",
+        "Image": "https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/displayicon.png",
+        "Summary": "KAY/O is a machine of war built for a single purpose: neutralizing radiants. His power to Suppress enemy abilities cripples his opponents' capacity to fight back, securing him and his allies the ultimate edge.",
+        "Abilities": [
+          {
+            "Name": "C - FRAG/ment",
+            "abilityImage":"https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/abilities/grenade/displayicon.png",
+            "Attributes": [
+              {
+                "Name": "Indicator",
+                "Label": "Added",
+                "Before": "",
+                "After": "Critical danger indicator added."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "PatchVer": "6.08",
+        "ID": 1,
+        "Name": "Skye",
+        "Image": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/displayicon.png",
+        "Summary": "Hailing from Australia, Skye and her band of beasts trailblaze the way through hostile territory. With her creations hampering the enemy, and her power to heal others, the team is strongest and safest by Skye's side.",
+        "Abilities": [
+          {
+            "Name": "X - Seekers",
+            "abilityImage":"https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/abilities/ultimate/displayicon.png",
+            "Attributes": [
+              {
+                "Name": "Indicator",
+                "Label": "Removed",
+                "Before": "",
+                "After": "Yellow indicator removed."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "PatchVer": "6.08",
+        "ID": 1,
+        "Name": "Killjoy",
+        "Image": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/displayicon.png",
+        "Summary": "The genius of Germany, Killjoy secures and defends key battlefield positions with a collection of traps, turrets, and mines. Each invention is primed to punish any assailant too dumb to back down.",
+        "Abilities": [
+          {
+            "Name": "E - Alarmbot",
+            "abilityImage":"https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/abilities/ability1/displayicon.png",
+            "Attributes": [
+              {
+                "Name": "Indicator",
+                "Label": "Removed",
+                "Before": "",
+                "After": "Yellow indicator removed."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "PatchVer": "6.08",
+        "ID": 1,
+        "Name": "Chamber",
+        "Image": "https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/displayicon.png",
+        "Summary": "Well dressed and well armed, French weapons designer Chamber expels aggressors with deadly precision. He leverages his custom arsenal to hold the line and pick off enemies from afar, with a contingency built for every plan.",
+        "Abilities": [
+          {
+            "Name": "C - Trademark",
+            "abilityImage":"https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/abilities/grenade/displayicon.png",
+            "Attributes": [
+              {
+                "Name": "Indicator",
+                "Label": "Removed",
+                "Before": "",
+                "After": "Yellow indicator removed."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "PatchVer": "6.08",
+        "ID": 1,
+        "Name": "Bug Fixes",
+        "Image": "",
+        "Summary": "",
+        "Attributes": [
+          {
+                "Name": "Minimap",
+                "Label": "Fixed",
+                "Before": "",
+                "After": "Fixed a bug in the minimap where teleport abilities can reveal an Agent’s out-of-sight minimap location when under packet loss."
+              },
+              {
+                "Name": "Player",
+                "Label": "Fixed",
+                "Before": "",
+                "After": "Fixed an issue where some players’ outline/fresnel were displayed even when “Hide Outlines and Fresnel” setting was enabled."
+              },
+              {
+                "Name": "Packet Rate",
+                "Label": "Fixed",
+                "Before": "",
+                "After": "Fixed a bug (previously fixed in 3.10 but cases of this issue were recently reported) where sometimes outgoing packet send rate was lower than intended for game clients running at > 128 FPS."
+              },
+              {
+                "Name": "Vision",
+                "Label": "Fixed",
+                "Before": "",
+                "After": "Fixed issues where vision cones of vertical wall-type abilities (Phoenix’s Blaze (C), Viper’s Toxic Screen (E), Harbor’s High Tide (E)) could flicker or distort on the minimap."
+              },
+              {
+                "Name": "Social Panels",
+                "Label": "Fixed",
+                "Before": "",
+                "After": "Fixed a bug where the social panel from the in-game options screen was sometimes getting stuck open (for example when you opened the social panel, closed the options screen, then opened the options screen again."
+              },
+              {
+                "Name": "Language",
+                "Label": "Fixed",
+                "Before": "",
+                "After": "Fixed a bug where when the in-game language is Arabic and you enter an English word first in a chat message, it would break the right-to-left format standard of text in Arabic."
+              }
+        ]
+      },
+      {
+        "PatchVer": "6.08",
+        "ID": 1,
+        "Name": "Bind - Map Updates",
+        "Image": "",
+        "Summary": "",
+        "Attributes": [
+          {
+                "Name": "Exit Room",
+                "Label": "Fixed",
+                "Before": "",
+                "After": "Exit room for B Long to A Lobby teleporter has been moved to outside A Bath."
+              },
+              {
+                "Name": "A Lobby",
+                "Label": "Fixed",
+                "Before": "",
+                "After": "A Lobby has been adjusted to accommodate the new teleporter location."
+              },
+              {
+                "Name": "Doorway",
+                "Label": "Fixed",
+                "Before": "",
+                "After": "Doorway from A Lobby into A Bath has been widened."
+              },
+              {
+                "Name": "Radianite Crates",
+                "Label": "Fixed",
+                "Before": "",
+                "After": "Radianite crates on A site have been adjusted."
+              }
+        ]
+      }
   ]
