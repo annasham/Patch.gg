@@ -1,0 +1,97 @@
+body, html {
+    font-family: 'Inter';
+    background-color: #151515;
+    color: #FFFFFF;
+    justify-content: center;
+    margin: 16px;
+}
+
+h3{
+    font-weight: 700;
+}
+
+.rounded-circle{
+    color: #8F8F8F;
+    background-color: transparent;
+    border: none;
+    align-content: center;
+}
+
+/*search bar*/
+.search{
+    display: flex;
+    align-content: center;
+    background-color: #2C2C2C;
+    border-radius: 4px;
+}
+
+#searchBar{
+    font-size: 16px;
+}
+
+.search-bar{
+    background-color: #2C2C2C;
+    color: white;
+    border-style: none;
+    padding: 5%;
+    width: 200px;
+}
+
+.header{
+    background-color: #151515;
+    text-align: center;
+    display: flex;
+    gap: 25%;
+    position: fixed;
+    width: 390px;
+    height: 60px;
+    top: 0;
+    padding-top: 10px;
+}
+
+.header p{
+    font-weight: 500;
+}
+
+ion-icon{
+    padding-top: 12px;
+    font-size: 25px;
+    color: white;
+}
+
+/*champion blocks*/
+.block{
+    background-color: #2C2C2C;
+    padding: 10px;
+    border-radius: 4px;
+    justify-content: center;
+    margin-bottom: 8px;
+    display: flex;
+}
+
+.champInfo{
+    display: flex;
+    gap: 10px;
+}
+
+.champText{
+    flex-direction: column;
+    line-height: 1;
+}
+
+#champName{
+    font-size: 13px;
+    font-weight: 700;
+    margin: 13px;
+}
+
+#champDescription{
+    color: #C2C2C2;
+    font-size: 13px;
+    margin: 13px;
+}
+
+#championImage{
+    /* background-color: #808080; */
+    border-radius: 4px;
+}

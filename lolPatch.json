@@ -1,8 +1,8 @@
-[
-  {
+{"lolPatch":[ {
     "PatchVer": "13.9.1",
     "ID": 1,
     "Name": "Neeko",
+    "champDescription":"the Curious Chameleon",
     "champImage":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/Neeko.png",
     "Summary": "Neeko Midscope update, all abilities adjusted.",
     "Abilities": [
@@ -137,6 +137,7 @@
     "PatchVer": "13.9.1",
     "ID": 1,
     "Name": "Aatrox",
+    "champDescription":"the Darkin Blade",
     "champImage":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/Aatrox.png",
     "Summary": "Passive damage increased. R movement speed increased.",
     "Abilities": [
@@ -171,6 +172,7 @@
     "PatchVer": "13.9.1",
     "ID": 1,
     "Name": "Amumu",
+    "champDescription":"the Sad Mummy",
     "champImage":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/Amumu.png",
     "Summary": "W damage increased early.",
     "Abilities": [
@@ -199,6 +201,7 @@
     "PatchVer": "13.9.1",
     "ID": 1,
     "Name": "Bel'Veth",
+    "champDescription":"the Empress of the Void",
     "champImage":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/Belveth.png",
     "Summary": "Attack damage growth decreased. Q damage to monsters increased.",
     "Abilities": [
@@ -232,6 +235,7 @@
     "PatchVer": "13.9.1",
     "ID": 1,
     "Name": "Jinx",
+    "champDescription":"the Loose Cannon",
     "champImage":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/Jinx.png",
     "Summary": "Attack damage growth decreased.",
     "Abilities": [
@@ -253,6 +257,7 @@
     "PatchVer": "13.9.1",
     "ID": 1,
     "Name": "Kayle",
+    "champDescription":"the Righteous",
     "champImage":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/Kayle.png",
     "Summary": "E AP ratio decreased, passive wave damage adjusted. R cast time decreased, AoE radius increased, Invulnerability duration adjusted, damage delay increased, magic damage decreased.",
     "Abilities": [
@@ -322,6 +327,7 @@
     "PatchVer": "13.9.1",
     "ID": 1,
     "Name": "Sion",
+    "champDescription":"the Undead Juggernaut",
     "champImage":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/Sion.png",
     "Summary": "Passive health decay increased.",
     "Abilities": [
@@ -344,6 +350,7 @@
     "PatchVer": "13.9.1",
     "ID": 1,
     "Name": "Swain",
+    "champDescription":"the Noxian Grand General",
     "champImage":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/Swain.png",
     "Summary": "Q damage increased.",
     "Abilities": [
@@ -378,6 +385,7 @@
     "PatchVer": "13.9.1",
     "ID": 1,
     "Name": "Taliyah",
+    "champDescription":"the Stoneweaver",
     "champImage":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/Taliyah.png",
     "Summary": "R cast lockout conditions adjusted.",
     "Abilities": [
@@ -400,6 +408,7 @@
     "PatchVer": "13.9.1",
     "ID": 1,
     "Name": "Trundle",
+    "champDescription":"the Troll King",
     "champImage":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/Trundle.png",
     "Summary": "Base attack speed increased, base mana increased.",
     "Abilities": [
@@ -427,6 +436,7 @@
     "PatchVer": "13.9.1",
     "ID": 1,
     "Name": "Volibear",
+    "champDescription":"the Relentless Storm",
     "champImage":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/Volibear.png",
     "Summary": "W damage and heal increased.",
     "Abilities": [
@@ -451,4 +461,4 @@
     ],
     "MidPatch": false
   }
-]
+]}

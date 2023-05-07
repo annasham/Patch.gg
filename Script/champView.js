@@ -23,4 +23,3 @@ function fetchChampionSplash(champName) {
 
 // Example usage:
 fetchChampionSplash("Neeko");
-

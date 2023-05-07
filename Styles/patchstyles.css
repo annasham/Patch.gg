@@ -42,6 +42,13 @@ ion-icon{
     padding: 35%;
 }
 
+.val-banner{
+    background-image: url('https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt94898a29a8da8532/64307908214c3211e18df02c/Val_Banner_PatchNotes_6_07.jpg');
+    background-size: cover;
+    border-radius: 4%;
+    padding: 35%;
+}
+
 .collapse {
     background-color: transparent;
     border: none;
