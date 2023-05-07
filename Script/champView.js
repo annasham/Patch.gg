@@ -23,3 +23,21 @@ function fetchChampionSplash(champName) {
 
 // Example usage:
 fetchChampionSplash("Neeko");
+
+//populate champion Pages based on data
+const pug = require('pug');
+
+//compiling json data
+const compiledFunction = pug.compileFile('template.pug');
+
+// Render a set of data
+console.log(compiledFunction({
+  name: 'Timothy'
+}));
+// "<p>Timothy's Pug source code!</p>"
+
+// Render another set of data
+console.log(compiledFunction({
+  name: 'Forbes'
+}));
+// "<p>Forbes's Pug source code!</p>"

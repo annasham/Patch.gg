@@ -18,9 +18,3 @@ document.addEventListener("DOMContentLoaded", function() {
   .then(res => res.json())
   .then(data => console.log(data))
   console.log(data);
-
-  //populate page with containers based on JSON data
-
-//   function populatePatch(){
-
-//   }
