@@ -213,3 +213,12 @@ h2{
     font-weight: 700;
     font-family: 'Inter';
 }
+
+.navigationBar{
+    width: 390px;
+    height: 55px;
+    background-color: #2C2C2C;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
