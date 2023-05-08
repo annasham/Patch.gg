@@ -10,7 +10,7 @@
 <body>
 
 <div class="header">
-    <ion-icon onclick ="location.href='/index.html';" name="arrow-back-outline"></ion-icon>
+    <ion-icon id="arrow" onclick ="location.href='/index.html';" name="arrow-back-outline"></ion-icon>
     <p>Patch 13.9 Notes</p>
 </div>
 
@@ -40,8 +40,14 @@
                 <ion-icon id="drop" name="chevron-down-outline"></ion-icon></button>
         </div>
     </div>
-    <div class="changes">
-        
+    <div class="changes"></div>
+
+<div class="navigationBar">
+    <div class="icons">
+        <ion-icon id="searchID" name="search" onclick="location.href='/Pages/champSearch.html';"></ion-icon>
+        <ion-icon id="homeID" name="home" onclick="location.href='/index.html';"></ion-icon>
+        <ion-icon id="socialID" name="share-social"></ion-icon>
+    </div>
 </div>
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
