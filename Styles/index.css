@@ -234,3 +234,6 @@ h2{
     align-items: center;
     padding-top: 5px;
 }
+#icons:active{
+    color: white;
+}
