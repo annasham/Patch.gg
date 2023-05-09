@@ -1,6 +1,3 @@
-//fetch JSON file for Patch 13.9.1 Notes Data
-fetch 
-
 //collapse for patch highlights
 document.addEventListener("DOMContentLoaded", function() {
   var btn = document.getElementsByClassName("collapse");
@@ -49,7 +46,24 @@ function fetchChampionImage(championName) {
       console.error("Error fetching champion image:", error);
     });
 };
-
-// Example usage:
+// Only fetching Neeko
 fetchChampionImage("Neeko");
 
+  //get data from JSON file
+  fetch('/JSON/lolPatch.JSON')
+  .then(response => response.json())
+  .then(data => champBlock(data));
+
+//parsing through data to display on LeaguePatch.html
+function champBlock(data){
+  var container = document.getElementsByClassName('block')
+  for (i = 0; i < data.length; i++){
+    var htmlBlock = `<div>
+                <div>${data[i].Name}</div>
+                <div>${data[i].champDescription}</div>
+              </div>`;
+            container.innerHTML += htmlBlock;
+  }
+}
+//call the function
+champBlock();

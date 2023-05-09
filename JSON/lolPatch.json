@@ -1,8 +1,9 @@
-{"lolPatch":[ {
+{ "lolPatch":[ {
     "PatchVer": "13.9.1",
     "ID": 1,
     "Name": "Neeko",
     "champDescription":"the Curious Chameleon",
+    "champAbout":"Hailing from a long lost tribe of vastaya, Neeko can blend into any crowd by borrowing the appearances of others, even absorbing something of their emotional state to tell friend from foe in an instant. No one is ever sure where—or who—Neeko might be, but those who intend to do her harm will soon witness her true colors revealed, and feel the full power of her primordial spirit magic unleashed upon them.",
     "champImage":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/Neeko.png",
     "Summary": "Neeko Midscope update, all abilities adjusted.",
     "Abilities": [
@@ -138,6 +139,7 @@
     "ID": 1,
     "Name": "Aatrox",
     "champDescription":"the Darkin Blade",
+    "champAbout":"Once honored defenders of Shurima against the Void, Aatrox and his brethren would eventually become an even greater threat to Runeterra, and were defeated only by cunning mortal sorcery. But after centuries of imprisonment, Aatrox was the first to find freedom once more, corrupting and transforming those foolish enough to try and wield the magical weapon that contained his essence. Now, with stolen flesh, he walks Runeterra in a brutal approximation of his previous form, seeking an apocalyptic and long overdue vengeance.",
     "champImage":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/Aatrox.png",
     "Summary": "Passive damage increased. R movement speed increased.",
     "Abilities": [
@@ -173,6 +175,7 @@
     "ID": 1,
     "Name": "Amumu",
     "champDescription":"the Sad Mummy",
+    "champAbout":"Legend claims that Amumu is a lonely and melancholy soul from ancient Shurima, roaming the world in search of a friend. Doomed by an ancient curse to remain alone forever, his touch is death, his affection ruin. Those who claim to have seen him describe a living cadaver, small in stature and wrapped in creeping bandages. Amumu has inspired myths, songs, and folklore told and retold for generations—such that it is impossible to separate truth from fiction.",
     "champImage":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/Amumu.png",
     "Summary": "W damage increased early.",
     "Abilities": [
@@ -202,6 +205,7 @@
     "ID": 1,
     "Name": "Bel'Veth",
     "champDescription":"the Empress of the Void",
+    "champAbout":"A nightmarish empress created from the raw material of an entire devoured city, Bel'Veth is the end of Runeterra itself... and the beginning of a monstrous reality of her own design. Driven by epochs of repurposed history, knowledge, and memories from the world above, she voraciously feeds an ever-expanding need for new experiences and emotions, consuming all that crosses her path. Yet her wants could never be sated by only one world as she turns her hungry eyes toward the Void's old masters...",
     "champImage":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/Belveth.png",
     "Summary": "Attack damage growth decreased. Q damage to monsters increased.",
     "Abilities": [
@@ -236,6 +240,7 @@
     "ID": 1,
     "Name": "Jinx",
     "champDescription":"the Loose Cannon",
+    "champAbout":"",
     "champImage":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/Jinx.png",
     "Summary": "Attack damage growth decreased.",
     "Abilities": [
@@ -258,6 +263,7 @@
     "ID": 1,
     "Name": "Kayle",
     "champDescription":"the Righteous",
+    "champAbout":"",
     "champImage":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/Kayle.png",
     "Summary": "E AP ratio decreased, passive wave damage adjusted. R cast time decreased, AoE radius increased, Invulnerability duration adjusted, damage delay increased, magic damage decreased.",
     "Abilities": [
@@ -328,6 +334,7 @@
     "ID": 1,
     "Name": "Sion",
     "champDescription":"the Undead Juggernaut",
+    "champAbout":"",
     "champImage":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/Sion.png",
     "Summary": "Passive health decay increased.",
     "Abilities": [
@@ -351,6 +358,7 @@
     "ID": 1,
     "Name": "Swain",
     "champDescription":"the Noxian Grand General",
+    "champAbout":"",
     "champImage":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/Swain.png",
     "Summary": "Q damage increased.",
     "Abilities": [
@@ -386,6 +394,7 @@
     "ID": 1,
     "Name": "Taliyah",
     "champDescription":"the Stoneweaver",
+    "champAbout":"",
     "champImage":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/Taliyah.png",
     "Summary": "R cast lockout conditions adjusted.",
     "Abilities": [
@@ -409,6 +418,7 @@
     "ID": 1,
     "Name": "Trundle",
     "champDescription":"the Troll King",
+    "champAbout":"",
     "champImage":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/Trundle.png",
     "Summary": "Base attack speed increased, base mana increased.",
     "Abilities": [
@@ -437,6 +447,7 @@
     "ID": 1,
     "Name": "Volibear",
     "champDescription":"the Relentless Storm",
+    "champAbout":"",
     "champImage":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/Volibear.png",
     "Summary": "W damage and heal increased.",
     "Abilities": [
