@@ -9,7 +9,30 @@ fetch("/JSON/lolPatch.json")
 
 // CreateElement based on Patch Data
 function loadChamp(data){
-    searchChamp = document.getElementById("block");
+    champMatch = document.getElementById("block");
+    var searchChamp = [];
+
+//search the champion
+var searchInput = document.getElementById("searchInput");
+searchInput.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) { // keyCode 13 is for the "Enter" key
+      searchChampion();
+    }
+});
+
+function searchChampion(){
+    var searchString = searchInput.value;
+    while (champMatch.firstChild) {
+        champMatch.removeChild(champMatch.firstChild);
+      }
+    for (i = 0; i < data.lolPatch.length; i++){
+        if (data.lolPatch[i].champName.includes(searchString)) {
+            var div = document.createElement("div");
+            champMatch.appendChild(div);
+        }
+    }
+}
+
     for (i = 0; i < data.lolPatch.length; i++){
         var div = document.createElement("div");
         div.style.width = 351 + "px";
@@ -32,7 +55,7 @@ function loadChamp(data){
         + '<br>'
         +  '<span style="color: #C2C2C2">' + '<span style="font-weight: 500">'+ data.lolPatch[i].champDescription;
         + '</span>'
-        searchChamp.appendChild(div);
+        champMatch.appendChild(div);
 
     //wrapping a link to all the divs
     var link = document.createElement("a");
@@ -40,6 +63,6 @@ function loadChamp(data){
     link.appendChild(div);
     link.style.textDecoration = 'none';
     
-    searchChamp.appendChild(link);
+    champMatch.appendChild(link);
     }
 }
