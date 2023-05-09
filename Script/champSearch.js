@@ -18,13 +18,14 @@ function loadChamp(data){
         div.style.borderRadius = 4 + "px";
         div.style.marginBottom = "10px";
         div.style.display = "flex";
-        div.style.justifyContent = "center";
+        div.style.justifyContent = "space-evenly";
         div.style.alignItems = "center";
         div.style.textAlign = "left";
         div.style.backgroundImage = 'url(' + data.lolPatch[i].champImage + ')';
         div.style.backgroundRepeat = 'no-repeat';
         div.style.backgroundPosition = 'left center';
         div.style.backgroundSize = '67px';
+        div.style.paddingLeft = "10px";
         div.innerHTML = 
         '<span style="color: white">' + '<span style="font-weight: 700">' + data.lolPatch[i].champName 
         + '</span>'
