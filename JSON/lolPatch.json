@@ -1,7 +1,8 @@
-{ "lolPatch":[ {
+{ "lolPatch":[ 
+  {
     "PatchVer": "13.9.1",
     "ID": 1,
-    "Name": "Neeko",
+    "champName": "Neeko",
     "champDescription":"the Curious Chameleon",
     "champAbout":"Hailing from a long lost tribe of vastaya, Neeko can blend into any crowd by borrowing the appearances of others, even absorbing something of their emotional state to tell friend from foe in an instant. No one is ever sure where—or who—Neeko might be, but those who intend to do her harm will soon witness her true colors revealed, and feel the full power of her primordial spirit magic unleashed upon them.",
     "champImage":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/Neeko.png",
@@ -137,7 +138,7 @@
   {
     "PatchVer": "13.9.1",
     "ID": 1,
-    "Name": "Aatrox",
+    "champName": "Aatrox",
     "champDescription":"the Darkin Blade",
     "champAbout":"Once honored defenders of Shurima against the Void, Aatrox and his brethren would eventually become an even greater threat to Runeterra, and were defeated only by cunning mortal sorcery. But after centuries of imprisonment, Aatrox was the first to find freedom once more, corrupting and transforming those foolish enough to try and wield the magical weapon that contained his essence. Now, with stolen flesh, he walks Runeterra in a brutal approximation of his previous form, seeking an apocalyptic and long overdue vengeance.",
     "champImage":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/Aatrox.png",
@@ -173,7 +174,7 @@
   {
     "PatchVer": "13.9.1",
     "ID": 1,
-    "Name": "Amumu",
+    "champName": "Amumu",
     "champDescription":"the Sad Mummy",
     "champAbout":"Legend claims that Amumu is a lonely and melancholy soul from ancient Shurima, roaming the world in search of a friend. Doomed by an ancient curse to remain alone forever, his touch is death, his affection ruin. Those who claim to have seen him describe a living cadaver, small in stature and wrapped in creeping bandages. Amumu has inspired myths, songs, and folklore told and retold for generations—such that it is impossible to separate truth from fiction.",
     "champImage":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/Amumu.png",
@@ -203,7 +204,7 @@
   {
     "PatchVer": "13.9.1",
     "ID": 1,
-    "Name": "Bel'Veth",
+    "champName": "Bel'Veth",
     "champDescription":"the Empress of the Void",
     "champAbout":"A nightmarish empress created from the raw material of an entire devoured city, Bel'Veth is the end of Runeterra itself... and the beginning of a monstrous reality of her own design. Driven by epochs of repurposed history, knowledge, and memories from the world above, she voraciously feeds an ever-expanding need for new experiences and emotions, consuming all that crosses her path. Yet her wants could never be sated by only one world as she turns her hungry eyes toward the Void's old masters...",
     "champImage":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/Belveth.png",
@@ -238,7 +239,7 @@
   {
     "PatchVer": "13.9.1",
     "ID": 1,
-    "Name": "Jinx",
+    "champName": "Jinx",
     "champDescription":"the Loose Cannon",
     "champAbout":"A manic and impulsive criminal from Zaun, Jinx lives to wreak havoc without care for the consequences. With an arsenal of deadly weapons, she unleashes the loudest blasts and brightest explosions to leave a trail of mayhem and panic in her wake. Jinx despises boredom, and gleefully brings her own chaotic brand of pandemonium wherever she goes.",
     "champImage":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/Jinx.png",
@@ -261,7 +262,7 @@
   {
     "PatchVer": "13.9.1",
     "ID": 1,
-    "Name": "Kayle",
+    "champName": "Kayle",
     "champDescription":"the Righteous",
     "champAbout":"Born to a Targonian Aspect at the height of the Rune Wars, Kayle honored her mother's legacy by fighting for justice on wings of divine flame. She and her twin sister Morgana were the protectors of Demacia for many years—until Kayle became disillusioned with the repeated failings of mortals, and abandoned this realm altogether. Still, legends are told of her punishing the unjust with her fiery swords, and many hope that she will one day return…",
     "champImage":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/Kayle.png",
@@ -332,7 +333,7 @@
   {
     "PatchVer": "13.9.1",
     "ID": 1,
-    "Name": "Sion",
+    "champName": "Sion",
     "champDescription":"the Undead Juggernaut",
     "champAbout":"A war hero from a bygone era, Sion was revered in Noxus for choking the life out of a Demacian king with his bare hands—but, denied oblivion, he was resurrected to serve his empire even in death. His indiscriminate slaughter claimed all who stood in his way, regardless of allegiance, proving he no longer retained his former humanity. Even so, with crude armor bolted onto rotten flesh, Sion continues to charge into battle with reckless abandon, struggling to remember his true self between the swings of his mighty axe.",
     "champImage":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/Sion.png",
@@ -356,7 +357,7 @@
   {
     "PatchVer": "13.9.1",
     "ID": 1,
-    "Name": "Swain",
+    "champName": "Swain",
     "champDescription":"the Noxian Grand General",
     "champAbout":"Jericho Swain is the visionary ruler of Noxus, an expansionist nation that reveres only strength. Though he was cast down and crippled in the Ionian wars, his left arm severed, he seized control of the empire with ruthless determination… and a new, demonic hand. Now, Swain commands from the front lines, marching against a coming darkness that only he can see—in glimpses gathered by shadowy ravens from the corpses all around him. In a swirl of sacrifice and secrets, the greatest secret of all is that the true enemy lies within.",
     "champImage":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/Swain.png",
@@ -392,7 +393,7 @@
   {
     "PatchVer": "13.9.1",
     "ID": 1,
-    "Name": "Taliyah",
+    "champName": "Taliyah",
     "champDescription":"the Stoneweaver",
     "champAbout":"Taliyah is a nomadic mage from Shurima, torn between teenage wonder and adult responsibility. She has crossed nearly all of Valoran on a journey to learn the true nature of her growing powers, though more recently she has returned to protect her tribe. Some have mistaken her compassion for weakness and paid the ultimate price—for beneath Taliyah's youthful demeanor is a will strong enough to move mountains, and a spirit fierce enough to make the earth itself tremble.",
     "champImage":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/Taliyah.png",
@@ -416,7 +417,7 @@
   {
     "PatchVer": "13.9.1",
     "ID": 1,
-    "Name": "Trundle",
+    "champName": "Trundle",
     "champDescription":"the Troll King",
     "champAbout":"Trundle is a hulking and devious troll with a particularly vicious streak, and there is nothing he cannot bludgeon into submission—not even the Freljord itself. Fiercely territorial, he chases down anyone foolish enough to enter his domain. Then, his massive club of True Ice at the ready, he chills his enemies to the bone and impales them with jagged, frozen pillars, laughing as they bleed out onto the tundra.",
     "champImage":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/Trundle.png",
@@ -445,7 +446,7 @@
   {
     "PatchVer": "13.9.1",
     "ID": 1,
-    "Name": "Volibear",
+    "champName": "Volibear",
     "champDescription":"the Relentless Storm",
     "champAbout":"To those who still revere him, the Volibear is the storm made manifest. Destructive, wild, and stubbornly resolute, he existed before mortals walked the Freljord's tundra, and is fiercely protective of the lands that he and his demi-god kin created. Cultivating a deep hatred of civilization and the weakness it brought with it, he now fights to return to the old ways—when the land was untamed, and blood spilled freely—and eagerly battles all who oppose him, with tooth, claw, and thundering domination.",
     "champImage":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/Volibear.png",

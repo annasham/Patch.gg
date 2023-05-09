@@ -24,20 +24,23 @@ function fetchChampionSplash(champName) {
 // Example usage:
 fetchChampionSplash("Neeko");
 
-//populate champion Pages based on data
-const pug = require('pug');
 
-//compiling json data
-const compiledFunction = pug.compileFile('template.pug');
+// var patchChamp = document.getElementById("champName");
+//fetches JSON data
+fetch('/JSON/lolPatch.JSON')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+              console.log(data.lolPatch[0].champName);
+              appendData(data);
+            });
 
-// Render a set of data
-console.log(compiledFunction({
-  name: 'Timothy'
-}));
-// "<p>Timothy's Pug source code!</p>"
-
-// Render another set of data
-console.log(compiledFunction({
-  name: 'Forbes'
-}));
-// "<p>Forbes's Pug source code!</p>"
+function appendData(data){
+  showChamp = document.getElementById("champName");
+  for (i = 0; i < data.lolPatch.length; i++){
+    var div = document.createElement("div");
+    div.innerHTML = 'Patch Notes on ' + data.lolPatch[i].champName;
+    showChamp.appendChild(div);
+  }
+}
