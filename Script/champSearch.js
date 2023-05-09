@@ -3,7 +3,7 @@
 fetch("/JSON/lolPatch.json")
 .then(res => res.json())
 .then(data => {
-    console.log(data.lolPatch[0].champName);
+    console.log(data.lolPatch[3].champImage);
     loadChamp(data);
 })
 
@@ -22,8 +22,9 @@ function loadChamp(data){
         div.style.alignItems = "center";
         div.style.textAlign = "left";
         div.innerHTML = 
-        data.lolPatch[i].champName 
-        + '<br>' + data.lolPatch[i].champDescription;
+        '<span style="color: white">' + '<span style="font-weight: 700">' + data.lolPatch[i].champName 
+        + '<br>'
+        +  '<span style="color: #C2C2C2">' + '<span style="font-weight: 500">'+ data.lolPatch[i].champDescription;
         searchChamp.appendChild(div);
     }
 }
