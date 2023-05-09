@@ -25,6 +25,7 @@ function loadChamp(data){
         div.style.backgroundRepeat = 'no-repeat';
         div.style.backgroundPosition = 'left center';
         div.style.backgroundSize = '67px';
+
         div.innerHTML = 
         '<span style="color: white">' + '<span style="font-weight: 700">' + data.lolPatch[i].champName 
         + '</span>'
@@ -32,5 +33,13 @@ function loadChamp(data){
         +  '<span style="color: #C2C2C2">' + '<span style="font-weight: 500">'+ data.lolPatch[i].champDescription;
         + '</span>'
         searchChamp.appendChild(div);
+
+    //wrapping a link to all the divs
+    var link = document.createElement("a");
+    link.href = "/Pages/champView.html";
+    link.appendChild(div);
+    link.style.textDecoration = 'none';
+    
+    searchChamp.appendChild(link);
     }
 }
