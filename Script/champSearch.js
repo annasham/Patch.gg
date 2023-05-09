@@ -19,7 +19,7 @@ function loadChamp(data){
         div.style.marginBottom = "10px";
         div.style.display = "flex";
         div.style.justifyContent = "center";
-        div.style.alignItems = "left";
+        div.style.alignItems = "center";
         div.style.textAlign = "left";
         div.innerHTML = 
         data.lolPatch[i].champName 
