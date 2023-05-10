@@ -30,6 +30,7 @@ function loadChamp(data){
 
 
       div.innerHTML = 
+      //how to add image here??
               '<span style="color: white">' + '<span style="font-weight: 700">' + '<span style="font-size: 12pt">' 
               + data.lolPatch[i].champName 
               + '</span>'
@@ -60,8 +61,9 @@ function loadChamp(data){
 
       // create champ image
       var champImage = document.createElement("img");
-      champImage.src = champImage.src = "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/" + data.lolPatch[i].champName + ".png";
-      champImage.style.width = "67px";
+      champImage.src = champImage.src = "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/" 
+      + data.lolPatch[i].champName + ".png";
+      champImage.style.width = "45px";
 
 
 
