@@ -22,88 +22,125 @@ fetch("/JSON/lolPatch.json")
     loadChamp(data);
 })
 
-// CreateElement based on Patch Data
 function loadChamp(data){
-    champMatch = document.getElementById("block");
+  champMatch = document.getElementById("block");
 
-    for (i = 0; i < data.lolPatch.length; i++){
-        var div = document.createElement("div");
-        div.style.width = 351 + "px";
-        div.style.height = 105 + "px";
-        div.style.backgroundColor = "#2C2C2C";
-        div.style.borderRadius = 4 + "px";
-        div.style.marginBottom = "10px";
-        div.style.display = "flex";
-        div.style.justifyContent = "center";
-        div.style.alignItems = "center";
-        div.style.textAlign = "left";
-        div.style.backgroundImage = 'url(' + data.lolPatch[i].champImage + ')';
-        div.style.backgroundRepeat = 'no-repeat';
-        div.style.backgroundPosition = 'left center';
-        div.style.backgroundSize = '67px';
+  for (i = 0; i < data.lolPatch.length; i++){
+      var div = document.createElement("div");
 
-        div.innerHTML = 
-        '<span style="color: white">' + '<span style="font-weight: 700">' + '<span style="font-size: 12pt">' 
-        + data.lolPatch[i].champName 
-        + '</span>'
-        + '<br>'
-        +  '<span style="color: #C2C2C2">' + '<span style="font-weight: 500">'+ data.lolPatch[i].champDescription;
-        + '</span>'
-        
-        champMatch.appendChild(div);
 
-        //create collapse button
-        var collapseButton = document.createElement("button");
-        collapseButton.innerHTML = "↓";
-        collapseButton.style.marginBottom = "10px";
-        collapseButton.addEventListener("click", function(){
+      div.innerHTML = 
+              '<span style="color: white">' + '<span style="font-weight: 700">' + '<span style="font-size: 12pt">' 
+              + data.lolPatch[i].champName 
+              + '</span>'
+              + '<br>'
+              +  '<span style="color: #C2C2C2">' + '<span style="font-weight: 500">'+ data.lolPatch[i].champDescription;
+              + '</span>'
+      
+      div.style.width = 351 + "px";
+      div.style.backgroundColor = "#2C2C2C";
+      div.style.borderRadius = 4 + "px";
+      div.style.marginBottom = "10px";
+      
+
+      // create collapse/expand button
+      var collapseButton = document.createElement("button");
+      collapseButton.innerHTML = "Expand";
+      collapseButton.style.marginBottom = "10px";
+      collapseButton.addEventListener("click", function() {
           var content = this.nextElementSibling;
           if (content.style.display === "block") {
-            content.style.display = "none";
-            this.innerHTML = "↓";
+              content.style.display = "none";
+              this.innerHTML = "Expand";
           } else {
-            content.style.display = "block";
-            this.innerHTML = "↑";
+              content.style.display = "block";
+              this.innerHTML = "Collapse";
           }
-        });
+      });
 
-        //set the content within the collapse
-        var content = document.createElement("div");
-        content.style.backgroundColor = "#2C2C2C";
-        content.style.borderRadius = "4px";
-        content.style.padding = "10px";
-        content.style.display = "none";
+      // create champ image
+      var champImage = document.createElement("img");
+      champImage.src = data.lolPatch[i].champImage;
+      champImage.style.width = "67px";
 
-        //call the patch note changes from JSON (champSummary)
+      // create champ name
+      var champName = document.createElement("span");
+      champName.innerHTML = data.lolPatch[i].champName;
+      champName.style.color = "white";
+      champName.style.fontWeight = "700";
+      champName.style.fontSize = "12pt";
+
+      // create champ description
+      var champDescription = document.createElement("span");
+      champDescription.innerHTML = data.lolPatch[i].champDescription;
+      champDescription.style.color = "#C2C2C2";
+      champDescription.style.fontWeight = "500";
+
+      // create content div
+      var contentDiv = document.createElement("div");
+      contentDiv.style.padding = "10px";
+      contentDiv.style.display = "none";
+
+      //Summary
         var champSummary = document.createElement("span");
         champSummary.innerHTML = data.lolPatch[i].Summary;
         champSummary.style.color = "#C2C2C2";
         champSummary.style.fontSize = "12pt";
         champSummary.style.fontWeight = "500";
 
-        //abilities
-        var champAbilities = document.createElement("span");
-        champAbilities.innerHTML = data.lolPatch[i].Abilities[i].abilityName;
+      // append everything to content Div
+          contentDiv.appendChild(champSummary);
 
-        //abilityAttributes
-        var abilityAttributes = document.createElement("li");
-        abilityAttributes.innerHTML = data.lolPatch[i].Abilities[i].Attributes[i].Name;
-        abilityAttributes.innerHTML = data.lolPatch[i].Abilities[i].Attributes[i].Label;
-        abilityAttributes.innerHTML = data.lolPatch[i].Abilities[i].Attributes[i].Before;
-        abilityAttributes.innerHTML = data.lolPatch[i].Abilities[i].Attributes[i].After;
+      // //abilityName
+      // var champAbilities = document.createElement("span");
+      // champAbilities.innerHTML = data.lolPatch[i].Abilities[i].abilityName[i];
 
-        //ability images
-        // var abilityImage = document.createElement("img");
-        // champImage.src = 'url(' + data.lolPatch[i].champImage + ')';
+      // //abilityAttributes
+      // var abilityAttributes = document.createElement("span");
+ 
+// create champ abilities
+for (j = 0; j < data.lolPatch[i].Abilities.length; j++){
+  // abilityName
+  var champAbilities = document.createElement("span");
+  champAbilities.innerHTML = data.lolPatch[i].Abilities[j].abilityName;
+  champAbilities.style.color = "#C2C2C2";
+  champAbilities.style.fontWeight = "500";
+  champAbilities.style.fontSize = "12pt";
 
-        //append content to collapsedDiv
-        content.appendChild(champSummary);
-        content.appendChild(document.createElement("br"));
-        content.appendChild(champAbilities);
-        content.appendChild(abilityAttributes);
+  // create ability attributes
+  var abilityAttributes = document.createElement("ul");
+  abilityAttributes.style.listStyleType = "none";
 
-        //append collapseButton
-        div.appendChild(collapseButton);
-        div.appendChild(content);
+  for (k = 0; k < data.lolPatch[i].Abilities[j].Attributes.length; k++){
+      var attribute = document.createElement("li");
+      attribute.innerHTML = data.lolPatch[i].Abilities[j].Attributes[k].Name + ": " 
+          + data.lolPatch[i].Abilities[j].Attributes[k].Before 
+          + " -> " 
+          + data.lolPatch[i].Abilities[j].Attributes[k].After;
+      attribute.style.color = "#C2C2C2";
+      attribute.style.fontWeight = "500";
+      attribute.style.fontSize = "10pt";
+
+      abilityAttributes.appendChild(attribute);
+  }
+
+  // create ability div
+  var abilityDiv = document.createElement("div");
+  abilityDiv.style.marginBottom = "10px";
+  abilityDiv.appendChild(champAbilities);
+  abilityDiv.appendChild(document.createElement("br"));
+  abilityDiv.appendChild(abilityAttributes);
+
+
+      // append ability div to content div
+      contentDiv.appendChild(abilityDiv);
+      
+
+      // append collapse button and content div to main div
+      div.appendChild(collapseButton);
+      div.appendChild(contentDiv);
+
+      champMatch.appendChild(div);
     }
+  }
 }
