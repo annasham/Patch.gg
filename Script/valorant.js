@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   //fetch data from JSON
-  fetch("/JSON/valPatch.JSON")
+  fetch("../JSON/valPatch.json")
   .then(res => res.json())
   .then(data => {
     console.log(data.valPatch[4].Image);
