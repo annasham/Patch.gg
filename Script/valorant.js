@@ -89,9 +89,17 @@ document.addEventListener("DOMContentLoaded", function() {
         var agentAbilities = document.createElement("span");
 
         agentAbilities.innerHTML = data.valPatch[i].Abilities[a].abilityName;
-        agentAbilities.style.color = "#C2C2C2";
-        agentAbilities.style.fontWeight = "500";
+        agentAbilities.style.color = "#c2c2c2";
+        agentAbilities.style.fontWeight = "700";
         agentAbilities.style.fontSize = "12pt";
+
+        //abilityImage
+        var abilityImage = document.createElement("img");
+        abilityImage.src = "https://media.valorant-api.com/agents/"
+      + data.valPatch[i].ID
+      + "/abilities/ability1/displayicon.png";
+      //styling
+        abilityImage.style.width = "45px";
 
         //ability attributes
         var abilityAttributes = document.createElement("ul");
@@ -130,6 +138,7 @@ document.addEventListener("DOMContentLoaded", function() {
  
       //append content to contentDiv
       contentDiv.appendChild(abilityDiv);
+      contentDiv.appendChild(abilityImage);
       
       //append data to the mainDiv
       showAgent.appendChild(div);
