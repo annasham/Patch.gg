@@ -53,9 +53,91 @@ document.addEventListener("DOMContentLoaded", function() {
 
       //styling image size
       agentImage.style.width = "45px";
+
+      //add a collapse/expand button to each div
+      var collapseButton = document.createElement("button");
+
+      collapseButton.innerHTML = "Expand";
       
-      //append data to the div
+      //styling the button
+      collapseButton.style.marginBottom = "10px";
+
+      //add eventlistener to the buttons
+      collapseButton.addEventListener("click", function(){
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+          this.innerHTML = "Expand";
+        } else {
+          content.style.display = "block";
+          this.innerHTML = "Collapse";
+        }
+      });
+
+      //creating the contentDiv to contain valPatch Updates
+      var contentDiv = document.createElement("div");
+
+      //styling the contentDiv
+      contentDiv.style.padding = "10px";
+      contentDiv.style.display = "none";
+
+      //create an ability list to showcase ability name + attributes (changes)
+      //need to create a nested loop for abilities
+      for (a = 0; a < data.valPatch[i].Abilities.length; a++){
+
+        //ability name
+        var agentAbilities = document.createElement("span");
+
+        agentAbilities.innerHTML = data.valPatch[i].Abilities[a].abilityName;
+        agentAbilities.style.color = "#C2C2C2";
+        agentAbilities.style.fontWeight = "500";
+        agentAbilities.style.fontSize = "12pt";
+
+        //ability attributes
+        var abilityAttributes = document.createElement("ul");
+        abilityAttributes.style.listStyleType = "none";
+
+        //nested for loop
+        for (t = 0; t < data.valPatch[i].Abilities[a].Attributes.length; t++){
+          var attribute = document.createElement("li");
+          attribute.innerHTML = 
+            '<span style="font-weight: 700">'
+            + '<span style="color: white">'
+            + data.valPatch[i].Abilities[a].Attributes[t].Name + ": "
+            + '<br>'
+            + '<span style="font-weight: 500">'
+            + '<span style="color: #C2C2C2">'
+            + data.valPatch[i].Abilities[a].Attributes[t].After
+            + '<br>';
+
+            //styling
+            attribute.style.color = "#C2C2C2";
+            attribute.style.fontWeight = "500";
+            attribute.style.fontSize = "10pt";
+      
+            //append attribute
+            abilityAttributes.appendChild(attribute);
+        }
+            //create abilityDiv
+            var abilityDiv = document.createElement("div");
+            abilityDiv.style.marginBottom = "10px";
+
+            //append
+            abilityDiv.appendChild(agentAbilities);
+            abilityDiv.appendChild(document.createElement("br"));
+            abilityDiv.appendChild(abilityAttributes);
+
+ 
+      //append content to contentDiv
+      contentDiv.appendChild(abilityDiv);
+      
+      //append data to the mainDiv
       showAgent.appendChild(div);
       div.appendChild(agentImage);
+      div.appendChild(collapseButton);
+      div.appendChild(contentDiv);
+
+      showAgent.appendChild(div);
+      }
     }
   }

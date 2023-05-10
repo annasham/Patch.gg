@@ -8,7 +8,7 @@
       "Image": "https://media.valorant-api.com/agents/ded3520f-4264-bfed-162d-b080e2abccf9/displayicon.png",
       "Abilities": [
         {
-          "Name": "E - Recon Bolt",
+          "abilityName": "E - Recon Bolt",
           "abilityImage":"https://media.valorant-api.com/agents/ded3520f-4264-bfed-162d-b080e2abccf9/abilities/ability2/displayicon.png",
           "Attributes": [
             {
@@ -42,7 +42,7 @@
         "Summary": "Forged in the heart of Mexico, Reyna dominates single combat, popping off with each kill she scores. Her capability is only limited by her raw skill, making her sharply dependant on performance.",
         "Abilities": [
           {
-            "Name": "C - Leer",
+            "abilityName": "C - Leer",
             "abilityImage":"https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/abilities/grenade/displayicon.png",
             "Attributes": [
               {
@@ -64,7 +64,7 @@
         "Summary": "KAY/O is a machine of war built for a single purpose: neutralizing radiants. His power to Suppress enemy abilities cripples his opponents' capacity to fight back, securing him and his allies the ultimate edge.",
         "Abilities": [
           {
-            "Name": "C - FRAG/ment",
+            "abilityName": "C - FRAG/ment",
             "abilityImage":"https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/abilities/grenade/displayicon.png",
             "Attributes": [
               {
@@ -86,7 +86,7 @@
         "Summary": "Hailing from Australia, Skye and her band of beasts trailblaze the way through hostile territory. With her creations hampering the enemy, and her power to heal others, the team is strongest and safest by Skye's side.",
         "Abilities": [
           {
-            "Name": "X - Seekers",
+            "abilityName": "X - Seekers",
             "abilityImage":"https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/abilities/ultimate/displayicon.png",
             "Attributes": [
               {
@@ -108,7 +108,7 @@
         "Summary": "The genius of Germany, Killjoy secures and defends key battlefield positions with a collection of traps, turrets, and mines. Each invention is primed to punish any assailant too dumb to back down.",
         "Abilities": [
           {
-            "Name": "E - Alarmbot",
+            "abilityName": "E - Alarmbot",
             "abilityImage":"https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/abilities/ability1/displayicon.png",
             "Attributes": [
               {
@@ -130,7 +130,7 @@
         "Summary": "Well dressed and well armed, French weapons designer Chamber expels aggressors with deadly precision. He leverages his custom arsenal to hold the line and pick off enemies from afar, with a contingency built for every plan.",
         "Abilities": [
           {
-            "Name": "C - Trademark",
+            "abilityName": "C - Trademark",
             "abilityImage":"https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/abilities/grenade/displayicon.png",
             "Attributes": [
               {
