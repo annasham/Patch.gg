@@ -1,8 +1,9 @@
-[
+{ "valPatch": [
     {
       "PatchVer": "6.08",
       "ID": 1,
-      "Name": "Sova",
+      "agentName": "Sova",
+      "codeName":"Hunter",
       "Summary": "Born from the eternal winter of Russia's tundra, Sova tracks, finds, and eliminates enemies with ruthless efficiency and precision. His custom bow and incredible scouting abilities ensure that even if you run, you cannot hide.",
       "Image": "https://media.valorant-api.com/agents/ded3520f-4264-bfed-162d-b080e2abccf9/displayicon.png",
       "Abilities": [
@@ -35,7 +36,8 @@
     {
         "PatchVer": "6.08",
         "ID": 1,
-        "Name": "Reyna",
+        "agentName": "Reyna",
+        "codeName":"Vampire",
         "Image": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/displayicon.png",
         "Summary": "Forged in the heart of Mexico, Reyna dominates single combat, popping off with each kill she scores. Her capability is only limited by her raw skill, making her sharply dependant on performance.",
         "Abilities": [
@@ -56,7 +58,8 @@
       {
         "PatchVer": "6.08",
         "ID": 1,
-        "Name": "KAY/O",
+        "agentName": "KAY/O",
+        "codeName":"Grenadier",
         "Image": "https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/displayicon.png",
         "Summary": "KAY/O is a machine of war built for a single purpose: neutralizing radiants. His power to Suppress enemy abilities cripples his opponents' capacity to fight back, securing him and his allies the ultimate edge.",
         "Abilities": [
@@ -77,7 +80,8 @@
       {
         "PatchVer": "6.08",
         "ID": 1,
-        "Name": "Skye",
+        "agentName": "Skye",
+        "codeName":"Guide",
         "Image": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/displayicon.png",
         "Summary": "Hailing from Australia, Skye and her band of beasts trailblaze the way through hostile territory. With her creations hampering the enemy, and her power to heal others, the team is strongest and safest by Skye's side.",
         "Abilities": [
@@ -98,7 +102,8 @@
       {
         "PatchVer": "6.08",
         "ID": 1,
-        "Name": "Killjoy",
+        "agentName": "Killjoy",
+        "codeName":"Killjoy",
         "Image": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/displayicon.png",
         "Summary": "The genius of Germany, Killjoy secures and defends key battlefield positions with a collection of traps, turrets, and mines. Each invention is primed to punish any assailant too dumb to back down.",
         "Abilities": [
@@ -119,7 +124,8 @@
       {
         "PatchVer": "6.08",
         "ID": 1,
-        "Name": "Chamber",
+        "agentName": "Chamber",
+        "codeName":"Deadeye",
         "Image": "https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/displayicon.png",
         "Summary": "Well dressed and well armed, French weapons designer Chamber expels aggressors with deadly precision. He leverages his custom arsenal to hold the line and pick off enemies from afar, with a contingency built for every plan.",
         "Abilities": [
@@ -140,7 +146,7 @@
       {
         "PatchVer": "6.08",
         "ID": 1,
-        "Name": "Bug Fixes",
+        "bugFixes": "Bug Fixes",
         "Image": "",
         "Summary": "",
         "Attributes": [
@@ -185,7 +191,7 @@
       {
         "PatchVer": "6.08",
         "ID": 1,
-        "Name": "Bind - Map Updates",
+        "mapUpdates": "Bind - Map Updates",
         "Image": "",
         "Summary": "",
         "Attributes": [
@@ -216,3 +222,4 @@
         ]
       }
   ]
+}
