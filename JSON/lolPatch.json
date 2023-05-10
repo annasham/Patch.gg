@@ -9,7 +9,7 @@
     "Summary": "Neeko Midscope update, all abilities adjusted.",
     "Abilities": [
       {
-        "Name": "Passive - Inherent Glamour",
+        "abilityName": "Passive - Inherent Glamour",
         "Image": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/passive/Neeko_P.png",
         "Attributes": [
           {
@@ -36,7 +36,7 @@
         ]
       },
       {
-        "Name": "Q - Blooming Burst",
+        "abilityName": "Q - Blooming Burst",
         "Image": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/spell/NeekoQ.png",
         "Attributes": [
           {
@@ -66,7 +66,7 @@
         ]
       },
       {
-        "Name": "W - ShapeSplitter",
+        "abilityName": "W - ShapeSplitter",
         "Image": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/spell/NeekoW.png",
         "Attributes": [
           {
@@ -92,7 +92,7 @@
         ]
       },
      {
-        "Name": "E - Tangle-Barbs",
+        "abilityName": "E - Tangle-Barbs",
         "Image": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/spell/NeekoE.png",
         "Attributes": [
           {
@@ -104,7 +104,7 @@
         ]
       },
      {
-        "Name": "R - Pop Blossom",
+        "abilityName": "R - Pop Blossom",
         "Image": "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/spell/NeekoR.png",
         "Attributes": [
           {
@@ -145,7 +145,7 @@
     "Summary": "Passive damage increased. R movement speed increased.",
     "Abilities": [
       {
-        "Name": "Passive - Deathbringer Stance",
+        "abilityName": "Passive - Deathbringer Stance",
         "Attributes": [
           {
             "Name": "Bonus Physical Damage",
@@ -156,7 +156,7 @@
         ]
       },
       {
-        "Name": "R - World Ender",
+        "abilityName": "R - World Ender",
         "Image":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/spell/AatroxR.png",
         "Attributes": [
           {
@@ -211,7 +211,7 @@
     "Summary": "Attack damage growth decreased. Q damage to monsters increased.",
     "Abilities": [
       {
-        "Name": "Base Stats",
+        "abilityName": "Base Stats",
         "Attributes": [
           {
             "Name": "Attack Damage Growth",
@@ -222,7 +222,7 @@
         ]
       },
       {
-        "Name": "Q - Void Surge",
+        "abilityName": "Q - Void Surge",
         "Image":"https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt15dbcb91ec90e0f8/6449e0bf25dc1411155ffd70/050223_BelVeth_Void_Surge.png",
         "Attributes": [
           {
@@ -269,7 +269,7 @@
     "Summary": "E AP ratio decreased, passive wave damage adjusted. R cast time decreased, AoE radius increased, Invulnerability duration adjusted, damage delay increased, magic damage decreased.",
     "Abilities": [
       {
-        "Name": "E - Starfire Spellblade",
+        "abilityName": "E - Starfire Spellblade",
         "Image":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/spell/KayleE.png",
         "Attributes": [
           {
@@ -287,7 +287,7 @@
         ]
       },
       {
-        "Name": "R - Divine Judgment",
+        "abilityName": "R - Divine Judgment",
         "Image":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/spell/KayleR.png",
         "Attributes": [
           {
@@ -340,7 +340,7 @@
     "Summary": "Passive health decay increased.",
     "Abilities": [
       {
-        "Name": "Passive - Glory in Death",
+        "abilityName": "Passive - Glory in Death",
         "Image":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/passive/Sion_Passive1.png",
         "Attributes": [
           {
@@ -364,7 +364,7 @@
     "Summary": "Q damage increased.",
     "Abilities": [
       {
-        "Name": "Q - Death's Hand",
+        "abilityName": "Q - Death's Hand",
         "Image":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/spell/SwainQ.png",
         "Attributes": [
           {
@@ -400,7 +400,7 @@
     "Summary": "R cast lockout conditions adjusted.",
     "Abilities": [
       {
-        "Name": "R - Weaver's Wall",
+        "abilityName": "R - Weaver's Wall",
         "Image":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/spell/TaliyahR.png",
         "Attributes": [
           {
@@ -424,7 +424,7 @@
     "Summary": "Base attack speed increased, base mana increased.",
     "Abilities": [
       {
-        "Name": "Base Stats",
+        "abilityName": "Base Stats",
         "Attributes": [
           {
             "Name": "Base Attack Speed",
@@ -453,7 +453,7 @@
     "Summary": "W damage and heal increased.",
     "Abilities": [
       {
-        "Name": "W - Frenzied Maul",
+        "abilityName": "W - Frenzied Maul",
         "Image":"https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/spell/VolibearW.png",
         "Attributes": [
           {
