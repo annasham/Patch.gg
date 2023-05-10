@@ -41,7 +41,7 @@ function loadChamp(data){
       div.style.backgroundColor = "#2C2C2C";
       div.style.borderRadius = 4 + "px";
       div.style.marginBottom = "10px";
-      
+    
 
       // create collapse/expand button
       var collapseButton = document.createElement("button");
@@ -60,8 +60,10 @@ function loadChamp(data){
 
       // create champ image
       var champImage = document.createElement("img");
-      champImage.src = data.lolPatch[i].champImage;
+      champImage.src = champImage.src = "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/" + data.lolPatch[i].champName + ".png";
       champImage.style.width = "67px";
+
+
 
       // create champ name
       var champName = document.createElement("span");
@@ -90,13 +92,6 @@ function loadChamp(data){
 
       // append everything to content Div
           contentDiv.appendChild(champSummary);
-
-      // //abilityName
-      // var champAbilities = document.createElement("span");
-      // champAbilities.innerHTML = data.lolPatch[i].Abilities[i].abilityName[i];
-
-      // //abilityAttributes
-      // var abilityAttributes = document.createElement("span");
  
 // create champ abilities
 for (j = 0; j < data.lolPatch[i].Abilities.length; j++){
@@ -137,6 +132,7 @@ for (j = 0; j < data.lolPatch[i].Abilities.length; j++){
       
 
       // append collapse button and content div to main div
+      div.appendChild(champImage);
       div.appendChild(collapseButton);
       div.appendChild(contentDiv);
 
