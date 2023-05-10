@@ -35,6 +35,7 @@ function searchChampion(){
 
     for (i = 0; i < data.lolPatch.length; i++){
         var div = document.createElement("div");
+        //styling
         div.style.width = 351 + "px";
         div.style.height = 105 + "px";
         div.style.backgroundColor = "#2C2C2C";

@@ -1,7 +1,7 @@
 { "valPatch": [
     {
       "PatchVer": "6.08",
-      "ID": 1,
+      "ID": "ded3520f-4264-bfed-162d-b080e2abccf9",
       "agentName": "Sova",
       "codeName":"Hunter",
       "Summary": "Born from the eternal winter of Russia's tundra, Sova tracks, finds, and eliminates enemies with ruthless efficiency and precision. His custom bow and incredible scouting abilities ensure that even if you run, you cannot hide.",
@@ -35,7 +35,7 @@
     },
     {
         "PatchVer": "6.08",
-        "ID": 1,
+        "ID": "a3bfb853-43b2-7238-a4f1-ad90e9e46bcc",
         "agentName": "Reyna",
         "codeName":"Vampire",
         "Image": "https://media.valorant-api.com/agents/a3bfb853-43b2-7238-a4f1-ad90e9e46bcc/displayicon.png",
@@ -57,7 +57,7 @@
       },
       {
         "PatchVer": "6.08",
-        "ID": 1,
+        "ID": "601dbbe7-43ce-be57-2a40-4abd24953621",
         "agentName": "KAY/O",
         "codeName":"Grenadier",
         "Image": "https://media.valorant-api.com/agents/601dbbe7-43ce-be57-2a40-4abd24953621/displayicon.png",
@@ -79,7 +79,7 @@
       },
       {
         "PatchVer": "6.08",
-        "ID": 1,
+        "ID": "6f2a04ca-43e0-be17-7f36-b3908627744d",
         "agentName": "Skye",
         "codeName":"Guide",
         "Image": "https://media.valorant-api.com/agents/6f2a04ca-43e0-be17-7f36-b3908627744d/displayicon.png",
@@ -101,7 +101,7 @@
       },
       {
         "PatchVer": "6.08",
-        "ID": 1,
+        "ID": "1e58de9c-4950-5125-93e9-a0aee9f98746",
         "agentName": "Killjoy",
         "codeName":"Killjoy",
         "Image": "https://media.valorant-api.com/agents/1e58de9c-4950-5125-93e9-a0aee9f98746/displayicon.png",
@@ -123,7 +123,7 @@
       },
       {
         "PatchVer": "6.08",
-        "ID": 1,
+        "ID": "22697a3d-45bf-8dd7-4fec-84a9e28c69d7",
         "agentName": "Chamber",
         "codeName":"Deadeye",
         "Image": "https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/displayicon.png",

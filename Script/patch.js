@@ -61,7 +61,7 @@ function loadChamp(data){
 
       // create champ image
       var champImage = document.createElement("img");
-      champImage.src = champImage.src = "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/" 
+      champImage.src = "https://am-a.akamaihd.net/image?f=http://ddragon.leagueoflegends.com/cdn/13.8.1/img/champion/" 
       + data.lolPatch[i].champName + ".png";
       champImage.style.width = "45px";
 
