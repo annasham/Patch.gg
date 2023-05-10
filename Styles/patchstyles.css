@@ -89,7 +89,7 @@ body, html {
 }
 
 /*champion block*/
-.block{
+/* .block{
     background-color: #2C2C2C;
     padding: 10px;
     border-radius: 4px;
@@ -119,10 +119,9 @@ body, html {
     color: #C2C2C2;
     font-size: 13px;
     margin: 13px;
-}
+} */
 
-#championImage{
-    /* background-color: #808080; */
+/* #championImage{
     border-radius: 4px;
 }
 
@@ -130,14 +129,14 @@ body, html {
     font-size: 20px;
     padding-left: 60px;
     padding-top: 20px;
-}
+} */
 
-h3{
+/* h3{
     margin: 10px;
-}
+} */
 
 /*augment block*/
-.augmentBlock{
+/* .augmentBlock{
     display: flex;
     gap: 10px;
     justify-content: space-evenly;
@@ -152,32 +151,32 @@ h3{
 
 #augmentName{
     font-size: 13px;
-    font-weight: 700;
+    font-weight: 700; */
     /* margin: 13px; */
-}
+/* }
 
 #augmentDescription{
     color: #C2C2C2;
     font-size: 13px;
     /* margin: 13px; */
-}
+/* } */
 
-#augmentImage{
+/* #augmentImage{
     min-width: 67px;
     min-height: 67px;
     background-color: #808080;
     border-radius: 4px;
     background-image: url('https://raw.communitydragon.org/pbe/game/assets/maps/tft/icons/augments/choiceui/gadgeteens-crest-ii.tft_set8.png');
     background-size: cover;
-}
+} */ 
 
-.augmentDrop{
+/* .augmentDrop{
     background-color: transparent;
     border: none;
     font-size: 20px;
     padding-left: 60px;
     padding-top: 10px;
-}
+} */
 
 .navigationBar{
     width: 500px;

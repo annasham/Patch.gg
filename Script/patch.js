@@ -13,57 +13,67 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-//collapse for champion blocks
-// const champDropBtn = document.querySelector('.champDrop');
-// const changesDiv = document.querySelector('.changes');
+//read lol data
+fetch("/JSON/lolPatch.json")
+.then(res => res.json())
+.then(data => {
+    console.log(data);
+    //pass data into loadChamp
+    loadChamp(data);
+})
 
-// champDropBtn.addEventListener('click', function() {
-//   if (changesDiv.style.display === 'none') {
-//       changesDiv.style.display = 'block';
-//   } else {
-//       changesDiv.style.display = 'none';
-//   }
-// });
-    
-//display champion image//
-const apiKey = "RGAPI-6697e72d-349c-4059-8289-21d461a7db46";
-const champName = document.getElementById("champName");
+// CreateElement based on Patch Data
+function loadChamp(data){
+    champMatch = document.getElementById("block");
 
-function fetchChampionImage(championName) {
-  fetch(`https://ddragon.leagueoflegends.com/cdn/13.9.1/img/champion/${championName}.png?api_key=${apiKey}`)
-    .then(response => {
-      if (response.ok) {
-        return response.blob();
-      }
-      throw new Error("Network response was not ok.");
-    })
-    .then(blob => {
-      const imageUrl = URL.createObjectURL(blob);
-      const imageTag = `<img src="${imageUrl}" alt="${championName}"style="width: 67px; height: 67px; border-radius: 4%;">`;
-      document.getElementById("championImage").innerHTML = imageTag;
-    })
-    .catch(error => {
-      console.error("Error fetching champion image:", error);
-    });
-};
-// Only fetching Neeko
-fetchChampionImage("Neeko");
+    for (i = 0; i < data.lolPatch.length; i++){
+        var div = document.createElement("div");
+        div.style.width = 351 + "px";
+        div.style.height = 105 + "px";
+        div.style.backgroundColor = "#2C2C2C";
+        div.style.borderRadius = 4 + "px";
+        div.style.marginBottom = "10px";
+        div.style.display = "flex";
+        div.style.justifyContent = "center";
+        div.style.alignItems = "center";
+        div.style.textAlign = "left";
+        div.style.backgroundImage = 'url(' + data.lolPatch[i].champImage + ')';
+        div.style.backgroundRepeat = 'no-repeat';
+        div.style.backgroundPosition = 'left center';
+        div.style.backgroundSize = '67px';
 
-  //get data from JSON file
-  fetch('/JSON/lolPatch.JSON')
-  .then(response => response.json())
-  .then(data => champBlock(data));
+        div.innerHTML = 
+        '<span style="color: white">' + '<span style="font-weight: 700">' + '<span style="font-size: 12pt">' 
+        + data.lolPatch[i].champName 
+        + '</span>'
+        + '<br>'
+        +  '<span style="color: #C2C2C2">' + '<span style="font-weight: 500">'+ data.lolPatch[i].champDescription;
+        + '</span>'
+        champMatch.appendChild(div);
 
-//parsing through data to display on LeaguePatch.html
-function champBlock(data){
-  var container = document.getElementsByClassName('block')
-  for (i = 0; i < data.length; i++){
-    var htmlBlock = `<div>
-                <div>${data[i].Name}</div>
-                <div>${data[i].champDescription}</div>
-              </div>`;
-            container.innerHTML += htmlBlock;
-  }
+        //create collapse button
+        var collapseButton = document.createElement("button");
+        collapseButton.innerHTML = "collapse";
+        collapseButton.style.marginBottom = "10px";
+        collapseButton.addEventListener("click", function(){
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+            this.innerHTML = "Show";
+          } else {
+            content.style.display = "block";
+            this.innerHTML = "Expand";
+          }
+        });
+
+        //set the content within the collapse
+        var content = document.createElement("div");
+        content.style.backgroundColor = "#2C2C2C";
+        content.style.borderRadius = "4px";
+        content.style.padding = "10px";
+        content.style.display = "none";
+
+        //call the patch note changes from JSON
+        var champ
+    }
 }
-//call the function
-champBlock();
