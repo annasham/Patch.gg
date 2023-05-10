@@ -3,7 +3,7 @@
 fetch("/JSON/lolPatch.json")
 .then(res => res.json())
 .then(data => {
-    console.log(data.lolPatch[3].champImage);
+    console.log(data.lolPatch[0].champName);
     loadChamp(data);
 })
 
@@ -28,6 +28,9 @@ function searchChampion(){
     for (i = 0; i < data.lolPatch.length; i++){
         if (data.lolPatch[i].champName.includes(searchString)) {
             var div = document.createElement("div");
+
+            //need content (start using templates)
+
             champMatch.appendChild(div);
         }
     }
