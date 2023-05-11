@@ -24,7 +24,9 @@ function displayChamp(data) {
     }
   
     var template = Handlebars.compile(document.querySelector("#champPage").innerHTML);
-    var filled = template({ champName: champNames});
+    var filled = template({ 
+        champName: champNames
+    });
   
     document.querySelector("#block").innerHTML = filled;
   }
