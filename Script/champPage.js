@@ -3,7 +3,7 @@ window.onload = function(){
     fetch("/JSON/lolPatch.json")
     .then(res => res.json())
     .then(data => {
-        console.log(data.lolPatch[0].champSplash);
+        console.log(data.lolPatch[0].Summary);
         console.log(data);
 
         createChampionPages(data);
@@ -24,12 +24,15 @@ function createChampionPage(champion) {
     var champAbout = champion.champAbout;
     var champSplash = champion.champSplash;
     var champDescription = champion.champDescription;
+    var patchSummary = champion.PatchVer;
     var championData = { 
         champSplash: champSplash, 
         champName: champName, 
         champAbout: champAbout,
         champDescription: champDescription,
-        data: champion };
+        patchVer: champion.PatchVer,
+        data: champion 
+    };
   
     var template = Handlebars.compile(document.querySelector("#champPage").innerHTML);
     var filled = template(championData);
