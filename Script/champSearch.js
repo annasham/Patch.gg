@@ -54,10 +54,14 @@ function searchChampion(){
         div.style.backgroundSize = '67px';
 
         div.innerHTML = 
-        '<span style="color: white">' + '<span style="font-weight: 700">' + data.lolPatch[i].champName 
+        '<span style="color: white">' 
+        + '<span style="font-weight: 700">' 
+        + data.lolPatch[i].champName 
         + '</span>'
         + '<br>'
-        +  '<span style="color: #C2C2C2">' + '<span style="font-weight: 500">'+ data.lolPatch[i].champDescription;
+        +  '<span style="color: #C2C2C2">' 
+        + '<span style="font-weight: 500">'
+        + data.lolPatch[i].champDescription;
         + '</span>'
         champMatch.appendChild(div);
 

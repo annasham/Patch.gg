@@ -1,37 +1,31 @@
 window.onload = function(){
-
-    //fills template onload
-    fill_template();
-
-    fetch('/JSON/lolPatch.JSON')
-    .then(function(res){
-        return res.json();
-    })
-    .then(function(data) {
-        fill_template(data);
+    //make fetch request to JSON file
+    fetch("/JSON/lolPatch.json")
+    .then(res => res.json())
+    .then(data => {
+        console.log(data.lolPatch[0].champName);
         console.log(data);
+
+        displayChamp(data);
     })
-    .catch(function(error) {
-        console.log('Error fetching data', error);
-    });
-};
-
-function fill_template(data){
-    var champName = "Patch Notes for: "
-
-    //If the data object is available and contains the champName property, 
-    //it appends the value of champName from the JSON data. 
-    //Otherwise, it appends "Unknown Champion" as a default value.
-
-    if (data && data.champName){
-        data += data.lolPatch[i].champName;
-    } else {
-        champName += "Champion Not Found";
-    }
-
-    var template = Handlebars.compile(document.querySelector("#champPage").innerHTML);
-    var filled = template({ champName: champName, footer: "haha this is a footer" });
-    
-        noEscape: true //this makes sure it doesn't escape HTML
-        document.querySelector("#output").innerHTML = filled;
 }
+
+function displayChamp(data) {
+    var champNames = ""; // Initialize an empty string to store the champ names
+  
+    if (data && Array.isArray(data.lolPatch)) {
+      for (var i = 0; i < data.lolPatch.length; i++) {
+        var champName = data.lolPatch[i].champName;
+        champNames += champName + ", ";
+      }
+      champNames = champNames.slice(0, -2); // Remove the last comma and space
+    } else {
+      champNames = "Champion Not Found";
+    }
+  
+    var template = Handlebars.compile(document.querySelector("#champPage").innerHTML);
+    var filled = template({ champName: champNames});
+  
+    document.querySelector("#block").innerHTML = filled;
+  }
+  
