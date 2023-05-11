@@ -3,31 +3,37 @@ window.onload = function(){
     fetch("/JSON/lolPatch.json")
     .then(res => res.json())
     .then(data => {
-        console.log(data.lolPatch[0].champName);
+        console.log(data.lolPatch[0].champAbout);
         console.log(data);
 
-        displayChamp(data);
-    })
+        createChampionPages(data);
+    });
 }
 
-function displayChamp(data) {
-    var champNames = ""; // Initialize an empty string to store the champ names
-  
+function createChampionPages(data) {
     if (data && Array.isArray(data.lolPatch)) {
-      for (var i = 0; i < data.lolPatch.length; i++) {
-        var champName = data.lolPatch[i].champName;
-        champNames += champName + ", ";
-      }
-      champNames = champNames.slice(0, -2); // Remove the last comma and space
-    } else {
-      champNames = "Champion Not Found";
+        for (var i = 0; i < data.lolPatch.length; i++) {
+            var champion = data.lolPatch[i];
+            createChampionPage(champion);
+        }
     }
+}
+
+function createChampionPage(champion) {
+    var champName = champion.champName;
+    var champAbout = champion.champAbout;
+    var championData = { champName: champName, data: champion };
   
     var template = Handlebars.compile(document.querySelector("#champPage").innerHTML);
-    var filled = template({ 
-        champName: champNames
-    });
+    var filled = template(championData);
   
-    document.querySelector("#block").innerHTML = filled;
-  }
-  
+    // Create a new page using the champion name as the file name
+    var fileName = champName.toLowerCase().replace(/ /g, "_") + ".html";
+    var link = document.createElement("a");
+    link.href = "data:text/html;charset=utf-8," + encodeURIComponent(filled);
+    link.download = fileName;
+    link.style.display = "none";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}

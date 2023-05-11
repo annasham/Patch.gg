@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChampPage</title>
+    <title>Champion Page</title>
+    <!-- Include Handlebars library -->
     <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.7/dist/handlebars.min.js"></script>
     <script src="/Script/champPage.js"></script>
 </head>
 <body>
+    <!-- Handlebars template for champion page -->
     <script type="text/x-handlebars-template" id="champPage">
-        <h1>Patch 13.9.1 Notes for </h1>
-        <div id="champBlock">
-            <p> {{champName}} </p>
-        </div>
+        <img>{{champSplash}}</img>
+        <h1>{{champName}}</h1>
+        <p>{{data.champAbout}}</p>
+        <!-- Display other champion data as needed -->
     </script>
-    <!-- this is HTML -->
     <div id="block"></div>
 </body>
 </html>
-
