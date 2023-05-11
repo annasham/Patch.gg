@@ -3,7 +3,7 @@ window.onload = function(){
     fetch("/JSON/lolPatch.json")
     .then(res => res.json())
     .then(data => {
-        console.log(data.lolPatch[0].champAbout);
+        console.log(data.lolPatch[0].champSplash);
         console.log(data);
 
         createChampionPages(data);
@@ -22,18 +22,33 @@ function createChampionPages(data) {
 function createChampionPage(champion) {
     var champName = champion.champName;
     var champAbout = champion.champAbout;
-    var championData = { champName: champName, data: champion };
+    var champSplash = champion.champSplash;
+    var champDescription = champion.champDescription;
+    var championData = { 
+        champSplash: champSplash, 
+        champName: champName, 
+        champDescription: champDescription,
+        data: champion };
   
     var template = Handlebars.compile(document.querySelector("#champPage").innerHTML);
     var filled = template(championData);
-  
-    // Create a new page using the champion name as the file name
-    var fileName = champName.toLowerCase().replace(/ /g, "_") + ".html";
-    var link = document.createElement("a");
-    link.href = "data:text/html;charset=utf-8," + encodeURIComponent(filled);
-    link.download = fileName;
-    link.style.display = "none";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+
+    var newPage = window.open("", "_blank");
+
+    var htmlContent = `
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>${champName}</title>
+        <link rel="stylesheet" href="/Styles/champView.css">
+    </head>
+    <body>
+        ${filled}
+    </body>
+    </html>
+`;
+    // newPage.document.write(filled); 
+    newPage.document.write(htmlContent); 
+    newPage.document.close();
+ 
 }

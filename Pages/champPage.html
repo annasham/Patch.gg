@@ -4,19 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Champion Page</title>
+    <title>Patch Notes for {{champName}}</title>
     <!-- Include Handlebars library -->
     <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.7/dist/handlebars.min.js"></script>
     <script src="/Script/champPage.js"></script>
+    
 </head>
 <body>
-    <!-- Handlebars template for champion page -->
+
     <script type="text/x-handlebars-template" id="champPage">
-        <img>{{champSplash}}</img>
-        <h1>{{champName}}</h1>
-        <p>{{data.champAbout}}</p>
-        <!-- Display other champion data as needed -->
+        <img id="splash" src="{{champSplash}}" alt="{{champName}} Splash Image">
+        <div id="header">
+            <ion-icon id="arrow" onclick ="location.href='/index.html';" name="arrow-back-outline"></ion-icon>
+            <h1>{{champName}}</h1>
+        </div>
+        <p id="champName">{{champName}}</p>
+        <p id="champDescription">{{champDescription}}</p>
+        <p id="champAbout">{{data.champAbout}}</p>
+        
     </script>
     <div id="block"></div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
 </body>
 </html>

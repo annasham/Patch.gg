@@ -27,16 +27,25 @@ function searchChampion(){
       }
     for (i = 0; i < data.lolPatch.length; i++){
         if (data.lolPatch[i].champName.includes(searchString)) {
-            var div = document.createElement("div");
+            var div = createChampionDiv(data.lolPatch[i]);
+            var link = createChampLink(div);
 
             //need content (start using templates)
 
-            champMatch.appendChild(div);
+            champMatch.appendChild(link);
         }
     }
 }
 
     for (i = 0; i < data.lolPatch.length; i++){
+        var div = createChampionDiv(data.lolPatch[i]);
+        var link = createChampionLink(div);
+
+        champMatch.appendChild(link);
+
+    }
+
+    function createChampionDiv(champion){
         var div = document.createElement("div");
         //styling
         div.style.width = 351 + "px";
@@ -52,25 +61,35 @@ function searchChampion(){
         div.style.backgroundRepeat = 'no-repeat';
         div.style.backgroundPosition = 'left center';
         div.style.backgroundSize = '67px';
+        
+            div.innerHTML = 
+                '<span style="color: white">' 
+                + '<span style="font-weight: 700">' 
+                + data.lolPatch[i].champName 
+                + '</span>'
+                + '<br>'
+                +  '<span style="color: #C2C2C2">' 
+                + '<span style="font-weight: 500">'
+                + data.lolPatch[i].champDescription;
+                + '</span>';
 
-        div.innerHTML = 
-        '<span style="color: white">' 
-        + '<span style="font-weight: 700">' 
-        + data.lolPatch[i].champName 
-        + '</span>'
-        + '<br>'
-        +  '<span style="color: #C2C2C2">' 
-        + '<span style="font-weight: 500">'
-        + data.lolPatch[i].champDescription;
-        + '</span>'
-        champMatch.appendChild(div);
-
-    //wrapping a link to all the divs
-    var link = document.createElement("a");
-    link.href = "/Pages/champView.html";
-    link.appendChild(div);
-    link.style.textDecoration = 'none';
+        return div;
+    }
     
-    champMatch.appendChild(link);
+    function createChampionLink(element, champion){
+        var champPageURL = "/Pages/champ/" + encodeURLComponent(champion.champName.toLowerCase()) + ".html";
+
+        var link = document.createElement("a");
+        link.href = champPageURL;
+        link.appendChild(element);
+        link.style.textDecoration = 'none';
+
+        //add an EventListener to open the champion page on click
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); //this prevents the page from opening all the pages
+            window.open(champPageURL, '_blank');
+        });
+
+        return link;
     }
 }
