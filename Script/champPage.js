@@ -27,6 +27,7 @@ function createChampionPage(champion) {
     var championData = { 
         champSplash: champSplash, 
         champName: champName, 
+        champAbout: champAbout,
         champDescription: champDescription,
         data: champion };
   
@@ -47,7 +48,6 @@ function createChampionPage(champion) {
     </body>
     </html>
 `;
-    // newPage.document.write(filled); 
     newPage.document.write(htmlContent); 
     newPage.document.close();
  
